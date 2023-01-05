@@ -39,8 +39,7 @@ Cisco Cloud Network Controller is the main architectural component of this multi
 
 **Intial lab diagram:**
 
-
-<img src="/images/image1a.png" width = 800>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png" width = 800>
 
 As indicated in the diagram, this lab is using EMEA based regions in both AWS(eu-central-1) and Azure(France Central) Clouds. 
 
@@ -62,7 +61,7 @@ For AWS Cloud each Tenant needs to have it's own Account ID, hence each POD have
 
 Step by step configuration will guide you towards final topology as indicated in the picture below: 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LTRCLD-2557/master/images/image251.png" width = 800>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image251.png" width = 800>
 
 The aim of the lab is to deploy end to end infrastructure hosted in two different Public Clouds with help of Cloud Network Controller and Nexus Dashboard, and also to perform validation and communication tests. 
 

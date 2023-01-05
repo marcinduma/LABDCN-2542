@@ -31,38 +31,36 @@ Cisco Cloud Network Controller is the main architectural component of this multi
 
 ●      Cisco Cloud Network Controller ( called CNC later in labguide) (deployed in each Public Cloud which is to be managed) 
 
-●      Cisco Nexus Dashboard (in our lab deployed in AWS Cloud) - Multicloud networking orchestration and policy management, disaster recovery, and high availability, as well as provisioning and health monitoring.
+●      Cisco Nexus Dashboard (in our lab deployed on-prem) - Multicloud networking orchestration and policy management, disaster recovery, and high availability, as well as provisioning and health monitoring.
 
 ●      Cisco Catalyst® 8000V - deployed in Public Clouds, allowing for communication with other Clouds or on-premises datacenter. Responsible for traffic secuirty and end to end policy enforcement. 
 
 ## High Level Design of Lab scenario
 
-**Intial lab diagram:**
+**Lab diagram:**
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png" width = 800>
 
-As indicated in the diagram, this lab is using EMEA based regions in both AWS(eu-central-1) and Azure(France Central) Clouds. 
+As indicated in the diagram, this lab is using EMEA based regions in AWS as well as dCloud (onprem). 
 
-Each POD have a dedicated Azure AAD Tenant and Subscription which will be shared to host both Infrastructure components (Cloud Network Controller, Cloud Routers), as well as User Virutal Machines for testing. 
+POD contains dedicated AWS infrastructure tenant which is already deployed (CNC and Cat8kv). Additionally each POD have dedicated AWS user tenant, its place where Policy model will be deployed.
+Onprem, Lab infrastructure contains Cisco Nexus Dashboard with Nexus Dashboard Orchestrator, Cisco ACI infrastructure and CSR1kv to terminate IPSec tunnels.
 
-For AWS Cloud each Tenant needs to have it's own Account ID, hence each POD have two(2) of them. First - for Infrastructure components (Cloud Network Controller, Cloud Routers, Nexus Dashboard), second for User Tenant hosting User Virtual Machines. 
+Control plane infrastructure is already deployed for this lab. Use cases will be deployed in user tenant which needs to be onboarded in Cisco Network Controller and Nexus Dashboard Orchestrator.
+
+!!! Info
+	Lab is based on Cisco ACI simulator, thus it won't be possible to run Data-plane between on-prem and AWS. 
+	If you are interested to deploy all infra in MultiCloud, please join our Instructor Led Lab LTRCLD-2557.
+
 
 ## **Lab agenda**
 
-### 1. Infrastructure veryfication - login and access 
-### 2. Site onboarding in Nexus Dashboard   
-### 3. Multisite infrastructure configuration
-### 4. Multisite configuration check 
-### 5. Tenant creation and Public Cloud Trust configuration 
-### 6. Three(3) common use-cases configuration and verifcation
-####  - Stretched VRF across Public Clouds with Cloud-local EPGs 
+### 1. User Tenant creation and Public Cloud Trust configuration 
+### 2. Two common use-cases configuration and verifcation
+####  - Stretched VRF across Public Cloud and on-prem ACI with local EPGs 
 ####  - Internet Gateway configuration in AWS 
-####  - Inter-Tenant routing 
 
-Step by step configuration will guide you towards final topology as indicated in the picture below: 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image251.png" width = 800>
-
-The aim of the lab is to deploy end to end infrastructure hosted in two different Public Clouds with help of Cloud Network Controller and Nexus Dashboard, and also to perform validation and communication tests. 
+The aim of the lab is to get familirized with Cisco ACI Policy Model used in HybridCloud deployments in Public Cloud and Onprem with help of Cloud Network Controller and Nexus Dashboard Orchestrator. 
 
 **<p style="text-align: center;">Enjoy!</p>**

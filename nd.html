@@ -9,7 +9,7 @@
 <meta content="Marcin Duma &amp; Karol Okraska" name="author"/>
 <link href="assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.2.16" name="generator"/>
-<title>POD1 LTRCLD-2557 Lab access details - CiscoLive EMEA 2023 --- LABDCN-2542</title>
+<title>Dashboard overview - CiscoLive EMEA 2023 --- LABDCN-2542</title>
 <link href="assets/stylesheets/main.1c3799f8.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.cc9b2e1e.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -41,7 +41,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#pod1-ltrcld-2557-lab-access-details">
+<a class="md-skip" href="#infrastructure-configuration-multisite-configuration">
           Skip to content
         </a>
 </div>
@@ -65,7 +65,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              POD1 LTRCLD-2557 Lab access details
+              Dashboard overview
             
           </span>
 </div>
@@ -127,8 +127,8 @@
         Lab Access
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
           Explore Nexus Dashboard
           <span class="md-nav__icon md-icon"></span>
@@ -139,10 +139,37 @@
           Explore Nexus Dashboard
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="nd.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Dashboard overview
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="nd.html">
         Dashboard overview
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nexus-dashboard-nd">
+    Nexus Dashboard (ND)
+  </a>
+<nav aria-label="Nexus Dashboard (ND)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nexus-dashboard-overview">
+    Nexus Dashboard overview
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="ndo.html">
@@ -297,38 +324,14 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aws-resources">
-    AWS Resources
+<a class="md-nav__link" href="#nexus-dashboard-nd">
+    Nexus Dashboard (ND)
   </a>
-<nav aria-label="AWS Resources" class="md-nav">
+<nav aria-label="Nexus Dashboard (ND)" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aws-infrastructure-tenant">
-    AWS Infrastructure Tenant
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#aws-infra-resources">
-    AWS Infra resources
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#aws-user-tenant">
-    AWS User Tenant
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#azure-resources">
-    Azure Resources
-  </a>
-<nav aria-label="Azure Resources" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#azure-infra-resources">
-    Azure Infra resources
+<a class="md-nav__link" href="#nexus-dashboard-overview">
+    Nexus Dashboard overview
   </a>
 </li>
 </ul>
@@ -341,95 +344,62 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="pod1-ltrcld-2557-lab-access-details">POD1 LTRCLD-2557 Lab access details</h1>
-<h2 id="aws-resources"><strong>AWS Resources</strong></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Make sure to use correct account (Infra or User) as indicated in lab guide!</p>
-</div>
-<h3 id="aws-infrastructure-tenant"><strong>AWS Infrastructure Tenant</strong></h3>
-<p>AWS Infra Account ID: <br/> <strong>856370776912</strong></p>
-<p>AWS Infra Account Username:<br/> <strong>student</strong></p>
-<p>AWS Infra Account Password:<br/> <strong>CiscoLive2@23!</strong></p>
-<h3 id="aws-infra-resources"><strong>AWS Infra resources</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Username</th>
-<th>Password</th>
-<th>Public IPv4 address</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ND1</td>
-<td>admin</td>
-<td>C1sco12345</td>
-<td>https://3.64.31.67</td>
-<td>Nexus Dashboard appliance</td>
-</tr>
-<tr>
-<td>Cisco Cloud Network Controller</td>
-<td>admin</td>
-<td>CiscoLive2@23!</td>
-<td>https://35.179.3.244/</td>
-<td>CNC-AWS-01 Cloud Network Controller</td>
-</tr>
-</tbody>
-</table>
-<h3 id="aws-user-tenant"><strong>AWS User Tenant</strong></h3>
-<p>AWS User Account ID:<br/> <strong>2837482374723</strong></p>
-<p>AWS User Account Username:<br/> <strong>student</strong></p>
-<p>AWS User Account Password:<br/> <strong>CiscoLive2023!</strong></p>
-<h2 id="azure-resources"><strong>Azure Resources</strong></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>For Azure Cloud shared subscribtion model is used, hence login is the same for Infra and User account!</p>
-</div>
-<p>Login username:<br/> <strong>student@CL23POD1.onmicrosoft.com</strong></p>
-<p>Password:<br/> <strong>CiscoLive2023!</strong></p>
-<h3 id="azure-infra-resources"><strong>Azure Infra resources</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Username</th>
-<th>Password</th>
-<th>Public IPv4 address</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CloudNetworkController</td>
-<td>admin</td>
-<td>CiscoLive2023!</td>
-<td>https://20.199.111.219</td>
-<td>CNC-Azure-01 Cloud Network Controller</td>
-</tr>
-<tr>
-<td>ct_routerp_francecentral_0_0</td>
-<td>csradmin</td>
-<td>CiscoLive2023!</td>
-<td>20.74.115.101</td>
-<td>Azure Cloud Router 01</td>
-</tr>
-<tr>
-<td>ct_routerp_francecentral_1_0</td>
-<td>csradmin</td>
-<td>CiscoLive2023!</td>
-<td>20.74.115.233</td>
-<td>Azure Cloud Router 02</td>
-</tr>
-</tbody>
-</table>
+<h1 id="infrastructure-configuration-multisite-configuration">Infrastructure configuration - MultiSite configuration</h1>
+<p>This lab section describes Nexus Dashboard functionalities. </p>
+<h2 id="nexus-dashboard-nd">Nexus Dashboard (ND)</h2>
+<p>Cisco Nexus Dashboard is a single launch point to monitor and scale across different sites, whether it is Cisco Application Centric Infrastructure™ (Cisco ACI®) fabric controllers, the Cisco® Application Policy Infrastructure Controller (APIC), Cisco Nexus Dashboard Fabric Controller (NDFC), or a Cloud APIC running in a public cloud provider environment. Cisco NX-OS with Cisco Nexus Dashboard Fabric Controller (NDFC) – formerly Cisco Data Center Network Manager (Cisco DCNM) – is available as a service on the Cisco Nexus Dashboard. With third-party services integrated in Nexus Dashboard, NetOps can achieve command and control over global network fabrics, optimizing performance and attaining insights into data center and cloud operations. Using Cisco Nexus Dashboard, DevOps can improve the application deployment experience for multicloud applications Infrastructure-as-Code (IaC) integrations. Developers describe in code the networking components and resources needed to run an application in a data center or cloud.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nexus-dashboard-aag_0.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nexus-dashboard-aag_0.png" width="800"/></a></p>
+<h3 id="nexus-dashboard-overview">Nexus Dashboard overview</h3>
+<p>After login to your Nexus Dashboard, you will land in "One view" section. It is usually a world map or table with your sites configured to be maintain from ND.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-1.png" width="800"/></a></p>
+<p>You can zoom in/out to see it more in details. </p>
+<p>By changing the view to table, you will have such details on the screen. <strong><em>Launch</em></strong> link will open you APIC GUI in new web browser tab.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-2.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-2.png" width="800"/></a></p>
+<p>By Clicking on <strong>Admin Console</strong> on Left navigation panel, you will be moved to System Overview Dashboard. Here you find information about your sites as well as Nexus Dashboard server status. You can check whether system is healthy, how many nodes in ND cluster you have, how many PODs/Deployments and Services are up and running. Simple graphical monitoring of entire system in one place.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-3.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-3.png" width="800"/></a></p>
+<p>To explore more, you can click on Left Navigation panel to find out details information about Nexus Dashboard:</p>
+<ul>
+<li>Sites - sites configured to be maintain by ND cluster</li>
+<li>Services - Services installed on Nexus Dashboard - in our case Orchestrator (NDO)</li>
+<li>System Resources - details about ND cluster - PODs/Deployments/Services, etc</li>
+<li>Operations - Firmware management, backups, etc</li>
+<li>Infrastructure - ND infra</li>
+<li>Administrative - AAA configuration</li>
+</ul>
+<p>In next section you will explore Nexus Dashboard Orchestrator - service which is running on ND cluster.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Lab Access" class="md-footer__link md-footer__link--prev" href="LAB_access-RDP.html" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Lab Access
+            </div>
+</div>
+</a>
+<a aria-label="Next: Orchestrator overview" class="md-footer__link md-footer__link--next" href="ndo.html" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Orchestrator overview
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">

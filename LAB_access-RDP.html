@@ -41,7 +41,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#connectivity-check">
+<a class="md-skip" href="#lab-access">
           Skip to content
         </a>
 </div>
@@ -157,28 +157,23 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#3-accessing-linux-jumphost">
-    3. Accessing Linux Jumphost
+<a class="md-nav__link" href="#1-accessing-cisco-nexus-dashboardndo">
+    1. Accessing Cisco Nexus Dashboard/NDO
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#4-accessing-cisco-intersight-platform">
-    4. Accessing Cisco Intersight Platform
+<a class="md-nav__link" href="#2-accessing-cisco-apic">
+    2. Accessing Cisco APIC
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-accessing-cisco-intersight-assist">
-    5. Accessing Cisco Intersight Assist
+<a class="md-nav__link" href="#3-accessing-cisco-cloud-network-controller-capic">
+    3. Accessing Cisco Cloud Network Controller (cAPIC)
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-accessing-csr1kv-lab-router">
-    5. Accessing CSR1kv Lab router
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#6-accessing-vcenter-for-lab">
-    6. Accessing vCenter for Lab
+<a class="md-nav__link" href="#4-accessing-aws-console">
+    4. Accessing AWS Console
   </a>
 </li>
 </ul>
@@ -187,36 +182,46 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-          INFRA review
+          Explore Nexus Dashboard
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="INFRA review" class="md-nav" data-md-level="1">
+<nav aria-label="Explore Nexus Dashboard" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          INFRA review
+          Explore Nexus Dashboard
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="infra-config.html">
-        Sites onboarding
+<a class="md-nav__link" href="nd.html">
+        Dashboard overview
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="infra-config-msite.html">
-        Multisite configuration
+<a class="md-nav__link" href="ndo.html">
+        Orchestrator overview
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="infra-config.html">
+        Sites connectivity
       </a>
 </li>
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="object-map.html">
+        ACI to Public Cloud Object mapping
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
           Tenant configuration
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Tenant configuration" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
           Tenant configuration
         </label>
@@ -235,13 +240,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
           Use-cases
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Use-cases" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_6">
 <span class="md-nav__icon md-icon"></span>
           Use-cases
         </label>
@@ -256,75 +261,65 @@
         Use-case 02 - Internet Gateway
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="use-case3.html">
-        Use-case 03 - Inter-Tenant routing
-      </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
           Appendixes
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Appendixes" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
+<label class="md-nav__title" for="__nav_7">
 <span class="md-nav__icon md-icon"></span>
           Appendixes
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" id="__nav_6_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6_1">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" id="__nav_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_1">
           Lab details
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Lab details" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_6_1">
+<label class="md-nav__title" for="__nav_7_1">
 <span class="md-nav__icon md-icon"></span>
           Lab details
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod1.html">
+<a class="md-nav__link" href="pod1x.md">
         POD-01
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod2.md">
+<a class="md-nav__link" href="pod2x.md">
         POD-02
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod3.md">
+<a class="md-nav__link" href="pod3x.md">
         POD-03
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod4.md">
+<a class="md-nav__link" href="pod4x.md">
         POD-04
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod5.md">
+<a class="md-nav__link" href="pod5x.md">
         POD-05
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod6.md">
+<a class="md-nav__link" href="pod6x.md">
         POD-06
       </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="object-map.html">
-        ACI to Public Cloud Object mapping
-      </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="resources.html">
@@ -373,28 +368,23 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#3-accessing-linux-jumphost">
-    3. Accessing Linux Jumphost
+<a class="md-nav__link" href="#1-accessing-cisco-nexus-dashboardndo">
+    1. Accessing Cisco Nexus Dashboard/NDO
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#4-accessing-cisco-intersight-platform">
-    4. Accessing Cisco Intersight Platform
+<a class="md-nav__link" href="#2-accessing-cisco-apic">
+    2. Accessing Cisco APIC
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-accessing-cisco-intersight-assist">
-    5. Accessing Cisco Intersight Assist
+<a class="md-nav__link" href="#3-accessing-cisco-cloud-network-controller-capic">
+    3. Accessing Cisco Cloud Network Controller (cAPIC)
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-accessing-csr1kv-lab-router">
-    5. Accessing CSR1kv Lab router
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#6-accessing-vcenter-for-lab">
-    6. Accessing vCenter for Lab
+<a class="md-nav__link" href="#4-accessing-aws-console">
+    4. Accessing AWS Console
   </a>
 </li>
 </ul>
@@ -404,107 +394,97 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="connectivity-check">Connectivity Check</h1>
+<h1 id="lab-access">Lab access</h1>
 <h2 id="1-lab-access-general-description">1. Lab access general description</h2>
 <p>The lab has been built leveraging multiple environments as following:</p>
 <ul>
 <li>Amazon Web Services</li>
 <li>Private intrastructure on-prem</li>
 </ul>
-<p>You will have access to Cisco Intersight GUI, where you will see  Kubernetes Clusters deployed On-Prem. In the end you will manage your application that will be deployed in 2 different environments. The infrastructure between On-prem and AWS is ready and functioning. In this lab you will see how to connect microservices together to make whole application work.
-Most of the tasks you will do from Linux Jumphost that is running on-premise. From there you will deploy components of your application in Kubernetes Cluster in AWS and on-prem.</p>
+<p>You will have access to Cisco dCloud Workstation, where you will be able to open WEB GUI to:
+- Cisco Nexus Dashboard/NDO
+- Cisco APIC onprem
+- Cisco Nexus Controller - AWS</p>
 <h2 id="2-vpn-connection-to-dcloud-infrastructure">2. VPN connection to dCloud infrastructure</h2>
 <p>The entire lab for the session is built using Cisco dCloud environment.
 Details of the session are provided in POD assigned to you. You will find there "Connect VPN" link which allow you connection to dCloud session.
-When you decide to use BYOD, please connect to VPN using provided credentials.</p>
+When you decide to use BYOD, please connect to VPN using provided credentials in WIL assistant webpage.</p>
 <h3 id="access-session-with-rdp">Access session with RDP</h3>
 <p>Once logged to the dCloud session, you will be able to RDP Windows workstation ready to use for you</p>
 <p>Open RDP client and use credentials provided below:</p>
 <p>IP Address:</p>
-<div class="highlight"><pre><span></span><code>198.18.133.10
+<div class="highlight"><pre><span></span><code>198.18.133.36
 </code></pre></div>
 <p>Username:</p>
-<div class="highlight"><pre><span></span><code>administrator
+<div class="highlight"><pre><span></span><code>dcloud\demouser
 </code></pre></div>
 <p>User password:</p>
 <div class="highlight"><pre><span></span><code>C1sco12345
 </code></pre></div>
-<p>When you login to Remote Desktop, you will find installed Chrome as web browser, from where you get access to Cisco Intersight page.
-To access CSR router and Linux jumphost, use Putty installed - shortcut is on Desktop.</p>
-<h2 id="3-accessing-linux-jumphost">3. Accessing Linux Jumphost</h2>
-<p>Open PuTTY client on RDP-workstation taskbar.</p>
-<p>PuTTY has pre-defined session to CSR router as well as to ubuntu-terminal. Use predefined ubuntu-terminal session by selecting it and click Open button.</p>
+<p>When you login to Remote Desktop, you will find installed Chrome as web browser, from where you get access to GUI resources.</p>
+<h2 id="1-accessing-cisco-nexus-dashboardndo">1. Accessing Cisco Nexus Dashboard/NDO</h2>
+<p>Once you are connected to RDP workstation, please open Chrome and by using Bookmark bar select <strong><em>Nexus Dashboard</em></strong>.</p>
+<p>IP Address:</p>
+<div class="highlight"><pre><span></span><code>198.18.134.200
+</code></pre></div>
 <p>Username:</p>
-<div class="highlight"><pre><span></span><code>dcloud
-</code></pre></div>
-<p>User password:</p>
-<div class="highlight"><pre><span></span><code>C1sco12345
-</code></pre></div>
-<h2 id="4-accessing-cisco-intersight-platform">4. Accessing Cisco Intersight Platform</h2>
-<p>Cisco Intersight Platform manages Kuberenetes clusters in the private infrasturcture. You will have access to dedicated instance of Cisco Intersight, from which you will manage your own Kuberenetes Clusters used later on to deploy application.</p>
-<p>Please find login credentials and URL to your IKS instance below:
-Please connect to Cisco Intersight from RDP session.</p>
-<p>URL:</p>
-<div class="highlight"><pre><span></span><code>https://intersight.com/
-</code></pre></div>
-<p>User name:</p>
-<div class="highlight"><pre><span></span><code>holcld2611+pod'X'@gmail.com
-</code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Intersight username you find in POD details at WILAssistant page.</p>
-</div>
-<p>User password:</p>
-<div class="highlight"><pre><span></span><code>CiscoLive!2022
-</code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>You can explore Cisco Intersight through the GUI, but please do not delete content already created.</p>
-</div>
-<h2 id="5-accessing-cisco-intersight-assist">5. Accessing Cisco Intersight Assist</h2>
-<p>Cisco Intersight requires installation of local (on-prem) satelite system. Cisco Intersight Assist collects data from local vCenter and send it to Cisco Intersight PaaS in secure manner.
-You can login to local Cisco Intersight Assist using credentials provided below:</p>
-<p>URL:</p>
-<div class="highlight"><pre><span></span><code>https://iva.dcloud.cisco.com
-</code></pre></div>
-<p>User name:</p>
 <div class="highlight"><pre><span></span><code>admin
 </code></pre></div>
 <p>User password:</p>
 <div class="highlight"><pre><span></span><code>C1sco12345
 </code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>You can explore Cisco Intersight Assist through the GUI, but please do not delete content already created.</p>
-</div>
-<h2 id="5-accessing-csr1kv-lab-router">5. Accessing CSR1kv Lab router</h2>
-<p>Your session contains Cisco CSR1kv router. It is used to terminate Site-2-Site tunnels with AWS tenant. All configurations are ready and doesn't require any modifications.</p>
-<p>Please find login credentials and IP address to your CSR1kv router below - use PuTTY predefined session:</p>
-<p>User name:</p>
+<h2 id="2-accessing-cisco-apic">2. Accessing Cisco APIC</h2>
+<p>Once you are connected to RDP workstation, please open Chrome and by using Bookmark bar select <strong><em>APIC</em></strong>.</p>
+<p>IP Address:</p>
+<div class="highlight"><pre><span></span><code>198.18.133.200
+</code></pre></div>
+<p>Username:</p>
 <div class="highlight"><pre><span></span><code>admin
 </code></pre></div>
 <p>User password:</p>
 <div class="highlight"><pre><span></span><code>C1sco12345
 </code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do not delete configuration already existing on the router.</p>
-</div>
-<h2 id="6-accessing-vcenter-for-lab">6. Accessing vCenter for Lab</h2>
-<p>Whole setup is done on ESXi in Cisco dCloud environment. During the lab you don't need to perform actions on vCenter itself. However for case of troubleshooting or exploration, credentials to your vCenter below.</p>
-<p>URL:</p>
-<div class="highlight"><pre><span></span><code>https://vc1.dcloud.cisco.com/ui
-</code></pre></div>
-<p>User name:</p>
-<div class="highlight"><pre><span></span><code>administrator@vsphere.local
+<h2 id="3-accessing-cisco-cloud-network-controller-capic">3. Accessing Cisco Cloud Network Controller (cAPIC)</h2>
+<p>IP Address of your CNC will be provided during the lab in later stage. Each Pod has its own CNC, credentials to login are same for all of them:</p>
+<p>Username:</p>
+<div class="highlight"><pre><span></span><code>admin
 </code></pre></div>
 <p>User password:</p>
-<div class="highlight"><pre><span></span><code>C1sco12345!
+<div class="highlight"><pre><span></span><code>CiscoLive2@23!
 </code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do not delete configuration nor VM machines already existing on the vCenter.</p>
-</div>
+<h2 id="4-accessing-aws-console">4. Accessing AWS Console</h2>
+<p>Your access to AWS User tenant per POD</p>
+<p>AWS console login link:</p>
+<p><a href="https://console.aws.amazon.com" target="_blank">https://console.aws.amazon.com</a></p>
+<p>Azure portal login link: </p>
+<p><a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a></p>
+<p>Information about account details as well as credentials are available in per POD sections listed in table below. Make sure to use corresponding POD ID from WiL dashboard.  </p>
+<table>
+<thead>
+<tr>
+<th>Attendee Name</th>
+<th>POD ID</th>
+<th>POD access details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student 1</td>
+<td>POD1</td>
+<td><a href="pod1x.md">Lab Details POD1</a></td>
+</tr>
+<tr>
+<td>Student 2</td>
+<td>POD2</td>
+<td><a href="pod1x.md">Lab Details POD2</a></td>
+</tr>
+<tr>
+<td>Student 3</td>
+<td>POD3</td>
+<td><a href="pod1x.md">Lab Details POD3</a></td>
+</tr>
+</tbody>
+</table>
 </article>
 </div>
 </div>
@@ -524,13 +504,13 @@ You can login to local Cisco Intersight Assist using credentials provided below:
             </div>
 </div>
 </a>
-<a aria-label="Next: Sites onboarding" class="md-footer__link md-footer__link--next" href="infra-config.html" rel="next">
+<a aria-label="Next: Dashboard overview" class="md-footer__link md-footer__link--next" href="nd.html" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Sites onboarding
+              Dashboard overview
             </div>
 </div>
 <div class="md-footer__button md-icon">

@@ -9,7 +9,7 @@
 <meta content="Marcin Duma &amp; Karol Okraska" name="author"/>
 <link href="assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.2.16" name="generator"/>
-<title>Multisite configuration - CiscoLive EMEA 2023 --- LABDCN-2542</title>
+<title>Infrastructure configuration - MultiSite configuration - CiscoLive EMEA 2023 --- LABDCN-2542</title>
 <link href="assets/stylesheets/main.1c3799f8.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.cc9b2e1e.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -65,7 +65,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Multisite configuration
+              Infrastructure configuration - MultiSite configuration
             
           </span>
 </div>
@@ -127,114 +127,49 @@
         Lab Access
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
-          INFRA review
+          Explore Nexus Dashboard
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="INFRA review" class="md-nav" data-md-level="1">
+<nav aria-label="Explore Nexus Dashboard" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
-          INFRA review
+          Explore Nexus Dashboard
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="nd.html">
+        Dashboard overview
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="ndo.html">
+        Orchestrator overview
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="infra-config.html">
-        Sites onboarding
+        Sites connectivity
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Multisite configuration
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="infra-config-msite.html">
-        Multisite configuration
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="object-map.html">
+        ACI to Public Cloud Object mapping
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#nexus-dashboard-orchestratorndo">
-    Nexus Dashboard Orchestrator(NDO)
-  </a>
-<nav aria-label="Nexus Dashboard Orchestrator(NDO)" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-ndo-service-introduction">
-    1. NDO Service Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-ndo-sites-onboarding">
-    2. NDO Sites Onboarding
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#3-site-connectivity-configuration">
-    3. Site Connectivity Configuration
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inter-site-connectivity-veryfication">
-    Inter-site connectivity veryfication
-  </a>
-<nav aria-label="Inter-site connectivity veryfication" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-nexush-dashboard-view">
-    1. Nexush Dashboard view
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inter-site-connectivity-veryfication-cloud-routers">
-    Inter-site connectivity veryfication  (Cloud Routers)
-  </a>
-<nav aria-label="Inter-site connectivity veryfication  (Cloud Routers)" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#1-ipsec-tunnel-veryfication">
-    1. IPSec tunnel veryfication
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-ospf-adjacency-veryfication">
-    2. OSPF adjacency veryfication
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#2-bgp-evpn-veryfication">
-    2. BGP EVPN veryfication
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_4">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
           Tenant configuration
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Tenant configuration" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
           Tenant configuration
         </label>
@@ -253,13 +188,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
           Use-cases
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Use-cases" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_5">
+<label class="md-nav__title" for="__nav_6">
 <span class="md-nav__icon md-icon"></span>
           Use-cases
         </label>
@@ -274,75 +209,65 @@
         Use-case 02 - Internet Gateway
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="use-case3.html">
-        Use-case 03 - Inter-Tenant routing
-      </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
           Appendixes
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Appendixes" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_6">
+<label class="md-nav__title" for="__nav_7">
 <span class="md-nav__icon md-icon"></span>
           Appendixes
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" id="__nav_6_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6_1">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" id="__nav_7_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_1">
           Lab details
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Lab details" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_6_1">
+<label class="md-nav__title" for="__nav_7_1">
 <span class="md-nav__icon md-icon"></span>
           Lab details
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod1.html">
+<a class="md-nav__link" href="pod1x.md">
         POD-01
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod2.md">
+<a class="md-nav__link" href="pod2x.md">
         POD-02
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod3.md">
+<a class="md-nav__link" href="pod3x.md">
         POD-03
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod4.md">
+<a class="md-nav__link" href="pod4x.md">
         POD-04
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod5.md">
+<a class="md-nav__link" href="pod5x.md">
         POD-05
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pod6.md">
+<a class="md-nav__link" href="pod6x.md">
         POD-06
       </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="object-map.html">
-        ACI to Public Cloud Object mapping
-      </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="resources.html">
@@ -627,34 +552,6 @@ ct_routerp_eu-central-1_0_0#
 </div>
 </main>
 <footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Sites onboarding" class="md-footer__link md-footer__link--prev" href="infra-config.html" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Previous
-              </span>
-              Sites onboarding
-            </div>
-</div>
-</a>
-<a aria-label="Next: NDO Tenant configuration" class="md-footer__link md-footer__link--next" href="ndo-tenant.html" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              NDO Tenant configuration
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-</div>
-</a>
-</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">

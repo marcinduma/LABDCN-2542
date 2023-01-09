@@ -107,8 +107,6 @@ Create subnet for all 3 AZ in our Region, use non-virtual zone.
  - **Subnet:** 10.0.1.0/25      **Name:** az-2c-subnet **AZ:** eu-west-2c
 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image83.png" width = 800>
-
 When done, hit **"Save"** button to save subnet configuration. 
 
 We also want to connect our subnets to Catalys8000V routers, this is done via Hub Network (Transit Gateway in AWS) - check the checkbox for **"Hub Network"**, select **Hub Network** and also all add all **Subnets** created before. 

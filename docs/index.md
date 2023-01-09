@@ -39,7 +39,7 @@ Cisco Cloud Network Controller is the main architectural component of this multi
 
 **Lab diagram:**
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png" width = 800>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/main/images/image1a.png" width = 800>
 
 As indicated in the diagram, this lab is using EMEA based regions in AWS as well as dCloud (onprem). 
 

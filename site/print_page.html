@@ -853,27 +853,26 @@
 <h2 id="index-cisco-cloud-network-solution-components">Cisco Cloud Network Solution components:</h2>
 <p>Cisco Cloud Network Controller is the main architectural component of this multicloud solution. It is the unified point of automation and management for the solution fabric including network and security policy, health monitoring, and optimizes performance and agility. The complete solution includes:</p>
 <p>●      Cisco Cloud Network Controller ( called CNC later in labguide) (deployed in each Public Cloud which is to be managed) </p>
-<p>●      Cisco Nexus Dashboard (in our lab deployed in AWS Cloud) - Multicloud networking orchestration and policy management, disaster recovery, and high availability, as well as provisioning and health monitoring.</p>
+<p>●      Cisco Nexus Dashboard (in our lab deployed on-prem) - Multicloud networking orchestration and policy management, disaster recovery, and high availability, as well as provisioning and health monitoring.</p>
 <p>●      Cisco Catalyst® 8000V - deployed in Public Clouds, allowing for communication with other Clouds or on-premises datacenter. Responsible for traffic secuirty and end to end policy enforcement. </p>
 <h2 id="index-high-level-design-of-lab-scenario">High Level Design of Lab scenario</h2>
-<p><strong>Intial lab diagram:</strong></p>
-<p><img src="/images/image1a.png" width = 800></p>
-<p>As indicated in the diagram, this lab is using EMEA based regions in both AWS(eu-central-1) and Azure(France Central) Clouds. </p>
-<p>Each POD have a dedicated Azure AAD Tenant and Subscription which will be shared to host both Infrastructure components (Cloud Network Controller, Cloud Routers), as well as User Virutal Machines for testing. </p>
-<p>For AWS Cloud each Tenant needs to have it's own Account ID, hence each POD have two(2) of them. First - for Infrastructure components (Cloud Network Controller, Cloud Routers, Nexus Dashboard), second for User Tenant hosting User Virtual Machines. </p>
+<p><strong>Lab diagram:</strong></p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png" width = 800></p>
+<p>As indicated in the diagram, this lab is using EMEA based regions in AWS as well as dCloud (onprem). </p>
+<p>POD contains dedicated AWS infrastructure tenant which is already deployed (CNC and Cat8kv). Additionally each POD have dedicated AWS user tenant, its place where Policy model will be deployed.
+Onprem, Lab infrastructure contains Cisco Nexus Dashboard with Nexus Dashboard Orchestrator, Cisco ACI infrastructure and CSR1kv to terminate IPSec tunnels.</p>
+<p>Control plane infrastructure is already deployed for this lab. Use cases will be deployed in user tenant which needs to be onboarded in Cisco Network Controller and Nexus Dashboard Orchestrator.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Lab is based on Cisco ACI simulator, thus it won't be possible to run Data-plane between on-prem and AWS. 
+If you are interested to deploy all infra in MultiCloud, please join our Instructor Led Lab LTRCLD-2557.</p>
+</div>
 <h2 id="index-lab-agenda"><strong>Lab agenda</strong></h2>
-<h3 id="index-1-infrastructure-veryfication-login-and-access">1. Infrastructure veryfication - login and access</h3>
-<h3 id="index-2-site-onboarding-in-nexus-dashboard">2. Site onboarding in Nexus Dashboard</h3>
-<h3 id="index-3-multisite-infrastructure-configuration">3. Multisite infrastructure configuration</h3>
-<h3 id="index-4-multisite-configuration-check">4. Multisite configuration check</h3>
-<h3 id="index-5-tenant-creation-and-public-cloud-trust-configuration">5. Tenant creation and Public Cloud Trust configuration</h3>
-<h3 id="index-6-three3-common-use-cases-configuration-and-verifcation">6. Three(3) common use-cases configuration and verifcation</h3>
-<h4 id="index--stretched-vrf-across-public-clouds-with-cloud-local-epgs">- Stretched VRF across Public Clouds with Cloud-local EPGs</h4>
+<h3 id="index-1-user-tenant-creation-and-public-cloud-trust-configuration">1. User Tenant creation and Public Cloud Trust configuration</h3>
+<h3 id="index-2-two-common-use-cases-configuration-and-verifcation">2. Two common use-cases configuration and verifcation</h3>
+<h4 id="index--stretched-vrf-across-public-cloud-and-on-prem-aci-with-local-epgs">- Stretched VRF across Public Cloud and on-prem ACI with local EPGs</h4>
 <h4 id="index--internet-gateway-configuration-in-aws">- Internet Gateway configuration in AWS</h4>
-<h4 id="index--inter-tenant-routing">- Inter-Tenant routing</h4>
-<p>Step by step configuration will guide you towards final topology as indicated in the picture below: </p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LTRCLD-2557/master/images/image251.png" width = 800></p>
-<p>The aim of the lab is to deploy end to end infrastructure hosted in two different Public Clouds with help of Cloud Network Controller and Nexus Dashboard, and also to perform validation and communication tests. </p>
+<p>The aim of the lab is to get familirized with Cisco ACI Policy Model used in HybridCloud deployments in Public Cloud and Onprem with help of Cloud Network Controller and Nexus Dashboard Orchestrator. </p>
 <p><strong><p style="text-align: center;">Enjoy!</p></strong></p></section><section class="print-page" id="lab_access-rdp"><h1 id="lab_access-rdp-connectivity-check">Connectivity Check</h1>
 <h2 id="lab_access-rdp-1-lab-access-general-description">1. Lab access general description</h2>
 <p>The lab has been built leveraging multiple environments as following:</p>

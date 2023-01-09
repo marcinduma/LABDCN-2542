@@ -9,7 +9,7 @@
 <meta content="Marcin Duma &amp; Karol Okraska" name="author"/>
 <link href="assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.2.16" name="generator"/>
-<title>POD1 LTRCLD-2557 Lab access details - CiscoLive EMEA 2023 --- LABDCN-2542</title>
+<title>Orchestrator overview - CiscoLive EMEA 2023 --- LABDCN-2542</title>
 <link href="assets/stylesheets/main.1c3799f8.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.cc9b2e1e.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -41,7 +41,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#pod1-ltrcld-2557-lab-access-details">
+<a class="md-skip" href="#nexus-dashboard-orchestratorndo">
           Skip to content
         </a>
 </div>
@@ -65,7 +65,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              POD1 LTRCLD-2557 Lab access details
+              Orchestrator overview
             
           </span>
 </div>
@@ -127,8 +127,8 @@
         Lab Access
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
           Explore Nexus Dashboard
           <span class="md-nav__icon md-icon"></span>
@@ -144,10 +144,33 @@
         Dashboard overview
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="ndo.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Orchestrator overview
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="ndo.html">
         Orchestrator overview
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-ndo-service-introduction">
+    1. NDO Service Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-ndo-overview">
+    2. NDO Overview
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="infra-config.html">
@@ -297,42 +320,14 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aws-resources">
-    AWS Resources
-  </a>
-<nav aria-label="AWS Resources" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#aws-infrastructure-tenant">
-    AWS Infrastructure Tenant
+<a class="md-nav__link" href="#1-ndo-service-introduction">
+    1. NDO Service Introduction
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aws-infra-resources">
-    AWS Infra resources
+<a class="md-nav__link" href="#2-ndo-overview">
+    2. NDO Overview
   </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#aws-user-tenant">
-    AWS User Tenant
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#azure-resources">
-    Azure Resources
-  </a>
-<nav aria-label="Azure Resources" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#azure-infra-resources">
-    Azure Infra resources
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -341,95 +336,110 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="pod1-ltrcld-2557-lab-access-details">POD1 LTRCLD-2557 Lab access details</h1>
-<h2 id="aws-resources"><strong>AWS Resources</strong></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Make sure to use correct account (Infra or User) as indicated in lab guide!</p>
-</div>
-<h3 id="aws-infrastructure-tenant"><strong>AWS Infrastructure Tenant</strong></h3>
-<p>AWS Infra Account ID: <br/> <strong>856370776912</strong></p>
-<p>AWS Infra Account Username:<br/> <strong>student</strong></p>
-<p>AWS Infra Account Password:<br/> <strong>CiscoLive2@23!</strong></p>
-<h3 id="aws-infra-resources"><strong>AWS Infra resources</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Username</th>
-<th>Password</th>
-<th>Public IPv4 address</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ND1</td>
-<td>admin</td>
-<td>C1sco12345</td>
-<td>https://3.64.31.67</td>
-<td>Nexus Dashboard appliance</td>
-</tr>
-<tr>
-<td>Cisco Cloud Network Controller</td>
-<td>admin</td>
-<td>CiscoLive2@23!</td>
-<td>https://35.179.3.244/</td>
-<td>CNC-AWS-01 Cloud Network Controller</td>
-</tr>
-</tbody>
-</table>
-<h3 id="aws-user-tenant"><strong>AWS User Tenant</strong></h3>
-<p>AWS User Account ID:<br/> <strong>2837482374723</strong></p>
-<p>AWS User Account Username:<br/> <strong>student</strong></p>
-<p>AWS User Account Password:<br/> <strong>CiscoLive2023!</strong></p>
-<h2 id="azure-resources"><strong>Azure Resources</strong></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>For Azure Cloud shared subscribtion model is used, hence login is the same for Infra and User account!</p>
-</div>
-<p>Login username:<br/> <strong>student@CL23POD1.onmicrosoft.com</strong></p>
-<p>Password:<br/> <strong>CiscoLive2023!</strong></p>
-<h3 id="azure-infra-resources"><strong>Azure Infra resources</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Username</th>
-<th>Password</th>
-<th>Public IPv4 address</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CloudNetworkController</td>
-<td>admin</td>
-<td>CiscoLive2023!</td>
-<td>https://20.199.111.219</td>
-<td>CNC-Azure-01 Cloud Network Controller</td>
-</tr>
-<tr>
-<td>ct_routerp_francecentral_0_0</td>
-<td>csradmin</td>
-<td>CiscoLive2023!</td>
-<td>20.74.115.101</td>
-<td>Azure Cloud Router 01</td>
-</tr>
-<tr>
-<td>ct_routerp_francecentral_1_0</td>
-<td>csradmin</td>
-<td>CiscoLive2023!</td>
-<td>20.74.115.233</td>
-<td>Azure Cloud Router 02</td>
-</tr>
-</tbody>
-</table>
+<h1 id="nexus-dashboard-orchestratorndo">Nexus Dashboard Orchestrator(NDO)</h1>
+<p><strong>Cisco Nexus Dashboard Orchestrator (NDO)</strong> provides consistent network and policy orchestration, scalability, and disaster recovery across multiple data centers through a single pane of glass while allowing the data center to go wherever the data is.</p>
+<p>NDO allows you to interconnect separate Cisco® Application Centric Infrastructure (Cisco ACI®) sites, Cisco Cloud ACI sites, and Cisco Nexus Dashboard Fabric Controller (NDFC) sites, each managed by its own controller (APIC cluster, NDFC cluster, or Cloud APIC instances in a public cloud). The on-premises sites (ACI or NDFC in the future) can be extended to different public clouds for hybrid-cloud deployments while cloud-first installations can be extended to multi-cloud deployments without on-premises sites. </p>
+<p>The single-pane network interconnect policy management and the consistent network workload and segmentation policy provided by NDO allows monitoring the health of the interconnected fabrics, enforcement of segmentation and security policies, and performance of all tasks required to define tenant intersite policies in APIC, NDFC, and cAPIC sites. </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image23a.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image23a.png" width="800"/></a></p>
+<p>● Key features and benefits</p>
+<ul>
+<li>
+<p>Single pane of glass for administration and orchestration of multiple networking fabrics for both Cisco ACI and NDFC</p>
+</li>
+<li>
+<p>Automation of the configuration and management of intersite network interconnects across an IP backbone for both Cisco ACI and NDFC</p>
+</li>
+<li>
+<p>Consistent multitenant policy across multiple sites, which allows IP mobility, disaster recovery, and active/active use cases for data centers</p>
+</li>
+<li>
+<p>Capability to map tenants, applications, and associated networks to specific availability domains within the Cisco Multi-Site architecture for both Cisco ACI and NDFC</p>
+</li>
+<li>
+<p>Hybrid cloud and multi-cloud orchestration supporting on-premises Cisco ACI sites and public cloud sites (AWS and Azure)</p>
+</li>
+<li>
+<p>Capability to have multi-cloud ACI deployments without on-premises sites</p>
+</li>
+<li>
+<p>Scale out sites and leaf switches based on resource growth</p>
+</li>
+</ul>
+<p>●Use cases</p>
+<p>There are several uses of Cisco Nexus Dashboard Orchestrator. Some of the main use cases include:</p>
+<ul>
+<li>
+<p>Large scale data center deployment</p>
+</li>
+<li>
+<p>Data center interconnectivity</p>
+</li>
+<li>
+<p>Cisco NDO multi-domain integrations</p>
+</li>
+<li>
+<p>Hybrid cloud and multi-cloud</p>
+</li>
+<li>
+<p>Service provider – 5G telco</p>
+</li>
+</ul>
+<p><strong>Let's now explore possibilites of Cisco Nexus Dashboard Orchestrator!</strong></p>
+<h3 id="1-ndo-service-introduction">1. NDO Service Introduction</h3>
+<p><strong>Nexus Dashboard Orchestrator</strong> is already installed and enabled under <strong>"Service Catalog"</strong> inside <strong>"Installed Service"</strong> </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image27.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image27.png" width="800"/></a></p>
+<p>Hit <strong>"Open"</strong> button in order to login </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image28.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image28.png" width="400"/></a></p>
+<p>You will be now redirected to <strong>Nexus Dashboard Orchestrator</strong> Dashboard. </p>
+<h3 id="2-ndo-overview">2. NDO Overview</h3>
+<p>NDO Dashboard is very similar to ND Dashboard. You will see world map with sites located on them. You can change view to <em>Table</em> and get such summary on the screen.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/ndo-overview-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/ndo-overview-1.png" width="800"/></a></p>
+<p>Similar to ND, Left navigation panel is divided to sections. You can find there:</p>
+<ul>
+<li>Sites - sites enablement under NDO. Sites are configured in ND itself but to be <strong>Managed</strong> by NDO must be explicitly configured in NDO Sites menu.</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/ndo-overview-2.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/ndo-overview-2.png" width="800"/></a></p>
+<ul>
+<li>Application Management - under this section you find all components for Logical deployment of tenants. You will use this section while configuring Use-Cases in a moment.</li>
+<li>Fabric Management - configuration of Fabric and Access Polices to be apply at sites</li>
+<li>Operations - Backup/Restore/Updates etc</li>
+<li>Infrastructure - Site connectivity - definition of overlay-1 VXLAN evpn, OSPF, eBGP - described on next section</li>
+<li>Integration - Possibile integration with SDWAN or DNAC</li>
+</ul>
+<p>On next page you will look on config definition for Inter-site communication.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Dashboard overview" class="md-footer__link md-footer__link--prev" href="nd.html" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Dashboard overview
+            </div>
+</div>
+</a>
+<a aria-label="Next: Sites connectivity" class="md-footer__link md-footer__link--next" href="infra-config.html" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Sites connectivity
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">

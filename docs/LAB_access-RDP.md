@@ -1,4 +1,4 @@
-# Connectivity Check
+# Lab access
 
 ## 1. Lab access general description
 
@@ -7,14 +7,17 @@ The lab has been built leveraging multiple environments as following:
 - Amazon Web Services
 - Private intrastructure on-prem
 
-You will have access to Cisco Intersight GUI, where you will see  Kubernetes Clusters deployed On-Prem. In the end you will manage your application that will be deployed in 2 different environments. The infrastructure between On-prem and AWS is ready and functioning. In this lab you will see how to connect microservices together to make whole application work.
-Most of the tasks you will do from Linux Jumphost that is running on-premise. From there you will deploy components of your application in Kubernetes Cluster in AWS and on-prem.
+You will have access to Cisco dCloud Workstation, where you will be able to open WEB GUI to:
+- Cisco Nexus Dashboard/NDO
+- Cisco APIC onprem
+- Cisco Nexus Controller - AWS
+
 
 ## 2. VPN connection to dCloud infrastructure
 
 The entire lab for the session is built using Cisco dCloud environment.
 Details of the session are provided in POD assigned to you. You will find there "Connect VPN" link which allow you connection to dCloud session.
-When you decide to use BYOD, please connect to VPN using provided credentials.
+When you decide to use BYOD, please connect to VPN using provided credentials in WIL assistant webpage.
 
 ### Access session with RDP
 
@@ -24,67 +27,27 @@ Open RDP client and use credentials provided below:
 
 IP Address:
 
-	198.18.133.10
+	198.18.133.36
 
 Username:
 	
-	administrator
+	dcloud\demouser
 
 User password:
 	
 	C1sco12345
 
-When you login to Remote Desktop, you will find installed Chrome as web browser, from where you get access to Cisco Intersight page.
-To access CSR router and Linux jumphost, use Putty installed - shortcut is on Desktop.
+When you login to Remote Desktop, you will find installed Chrome as web browser, from where you get access to GUI resources.
 
-## 3. Accessing Linux Jumphost
+## 1. Accessing Cisco Nexus Dashboard/NDO
 
-Open PuTTY client on RDP-workstation taskbar.
+Once you are connected to RDP workstation, please open Chrome and by using Bookmark bar select ***Nexus Dashboard***.
 
-PuTTY has pre-defined session to CSR router as well as to ubuntu-terminal. Use predefined ubuntu-terminal session by selecting it and click Open button.
+IP Address:
+
+	198.18.134.200
 
 Username:
-	
-	dcloud
-
-User password:
-	
-	C1sco12345
-
-
-## 4. Accessing Cisco Intersight Platform
-
-Cisco Intersight Platform manages Kuberenetes clusters in the private infrasturcture. You will have access to dedicated instance of Cisco Intersight, from which you will manage your own Kuberenetes Clusters used later on to deploy application.
-
-Please find login credentials and URL to your IKS instance below:
-Please connect to Cisco Intersight from RDP session.
-
-URL:
-	
-	https://intersight.com/
-User name:
-	
-	holcld2611+pod'X'@gmail.com
-
-!!! tip
-	Intersight username you find in POD details at WILAssistant page.
-
-User password:
-	
-	CiscoLive!2022
-
-!!! warning
-	You can explore Cisco Intersight through the GUI, but please do not delete content already created.
-
-## 5. Accessing Cisco Intersight Assist
-
-Cisco Intersight requires installation of local (on-prem) satelite system. Cisco Intersight Assist collects data from local vCenter and send it to Cisco Intersight PaaS in secure manner.
-You can login to local Cisco Intersight Assist using credentials provided below:
-
-URL:
-	
-	https://iva.dcloud.cisco.com
-User name:
 	
 	admin
 
@@ -92,39 +55,52 @@ User password:
 	
 	C1sco12345
 
-!!! warning
-	You can explore Cisco Intersight Assist through the GUI, but please do not delete content already created.
+## 2. Accessing Cisco APIC
 
-## 5. Accessing CSR1kv Lab router
+Once you are connected to RDP workstation, please open Chrome and by using Bookmark bar select ***APIC***.
 
-Your session contains Cisco CSR1kv router. It is used to terminate Site-2-Site tunnels with AWS tenant. All configurations are ready and doesn't require any modifications.
+IP Address:
 
-Please find login credentials and IP address to your CSR1kv router below - use PuTTY predefined session:
+	198.18.133.200
 
-User name:
+Username:
 	
 	admin
+
 User password:
 	
 	C1sco12345
 
-!!! warning
-	Do not delete configuration already existing on the router.
 
-## 6. Accessing vCenter for Lab
+## 3. Accessing Cisco Cloud Network Controller (cAPIC)
 
-Whole setup is done on ESXi in Cisco dCloud environment. During the lab you don't need to perform actions on vCenter itself. However for case of troubleshooting or exploration, credentials to your vCenter below.
+IP Address of your CNC will be provided during the lab in later stage. Each Pod has its own CNC, credentials to login are same for all of them:
 
-URL:
+Username:
 	
-	https://vc1.dcloud.cisco.com/ui
-User name:
-	
-	administrator@vsphere.local
+	admin
+
 User password:
 	
-	C1sco12345!
+	CiscoLive2@23!
 
 
-!!! warning
-	Do not delete configuration nor VM machines already existing on the vCenter.
+## 4. Accessing AWS Console
+
+Your access to AWS User tenant per POD
+
+AWS console login link:
+
+[https://console.aws.amazon.com](https://console.aws.amazon.com){target=_blank}
+
+Azure portal login link: 
+
+[https://portal.azure.com](https://portal.azure.com){target=_blank}
+
+Information about account details as well as credentials are available in per POD sections listed in table below. Make sure to use corresponding POD ID from WiL dashboard.  
+
+| Attendee Name           | POD ID       | POD access details       |
+| -------------- | -------------- | -------------- |
+| Student 1 | POD1 | [Lab Details POD1](pod1x.md)|
+| Student 2 | POD2 | [Lab Details POD2](pod1x.md)|
+| Student 3 | POD3 | [Lab Details POD3](pod1x.md)|

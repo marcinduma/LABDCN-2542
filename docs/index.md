@@ -37,30 +37,24 @@ Cisco Cloud Network Controller is the main architectural component of this multi
 
 ## High Level Design of Lab scenario
 
+The Lab excercise is about showing you practical use of stretching services between on-prem and Public Cloud leveraging Cisco Nexus Dashboard Orchestrator and CNC for it.
+It gives you oportunity to check how easy can be maintaining your services in different places due to scalibility, costs, performance using Cisco Cloud products.
+Figure below is showing Logical design you are going to deploy in the Lab. Infrastructure part is already deployed, you don't need to bother with NDO installation, CNC installation or day-1 configs. This lab is solely to familiraze you with deployment of logical topology from the figure.
+
+!!! Info
+	Lab is based on Cisco ACI simulator, thus it won't be possible to run Data-plane between on-prem and AWS. 
+	If you are interested to deploy all infra in MultiCloud, please join our **Instructor Led Lab LTRCLD-2557**.
+
+
 **Lab diagram:**
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png" width = 800>
 
 As indicated in the diagram, this lab is using EMEA based regions in AWS as well as dCloud (onprem). 
 
-POD contains dedicated AWS infrastructure tenant which is already deployed (CNC and Cat8kv). Additionally each POD have dedicated AWS user tenant, its place where Policy model will be deployed.
+POD runs on dedicated AWS infrastructure tenant which is already deployed and contains CNC and Cat8kv routers. Additionally each POD have dedicated AWS user tenant, its place where Policy model will be deployed.
 Onprem, Lab infrastructure contains Cisco Nexus Dashboard with Nexus Dashboard Orchestrator, Cisco ACI infrastructure and CSR1kv to terminate IPSec tunnels.
 
 Control plane infrastructure is already deployed for this lab. Use cases will be deployed in user tenant which needs to be onboarded in Cisco Network Controller and Nexus Dashboard Orchestrator.
-
-!!! Info
-	Lab is based on Cisco ACI simulator, thus it won't be possible to run Data-plane between on-prem and AWS. 
-	If you are interested to deploy all infra in MultiCloud, please join our Instructor Led Lab LTRCLD-2557.
-
-
-## **Lab agenda**
-
-### 1. User Tenant creation and Public Cloud Trust configuration 
-### 2. Two common use-cases configuration and verifcation
-####  - Stretched VRF across Public Cloud and on-prem ACI with local EPGs 
-####  - Internet Gateway configuration in AWS 
-
-
-The aim of the lab is to get familirized with Cisco ACI Policy Model used in HybridCloud deployments in Public Cloud and Onprem with help of Cloud Network Controller and Nexus Dashboard Orchestrator. 
 
 **<p style="text-align: center;">Enjoy!</p>**

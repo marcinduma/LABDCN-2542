@@ -3,27 +3,28 @@ site_description: ACI Anywhere using Cisco Cloud Network Controller (formerly Cl
 site_author: Marcin Duma & Karol Okraska
 
 nav:
-  - Home: index.md #opis laba z HLD - obrazkiem
+  - Home: index.md
   - Lab Access: LAB_access-RDP.md
-  - INFRA review: 
-    - Sites onboarding: infra-config.md
-    - Multisite configuration: infra-config-msite.md
+  - Explore Nexus Dashboard: 
+    - Dashboard overview: nd.md
+    - Orchestrator overview: ndo.md
+    - Sites connectivity: infra-config.md
+  - ACI to Public Cloud Object mapping: object-map.md
   - Tenant configuration:
     - NDO Tenant configuration: ndo-tenant.md
     - AWS Trust: aws-trust.md
   - Use-cases:
     - Use-case 01 - Stretched VRF: use-case1.md
     - Use-case 02 - Internet Gateway: use-case2.md
-    - Use-case 03 - Inter-Tenant routing: use-case3.md
   - Appendixes:
     - Lab details:
-      - POD-01: pod1.md
-      - POD-02: pod2.md
-      - POD-03: pod3.md
-      - POD-04: pod4.md
-      - POD-05: pod5.md
-      - POD-06: pod6.md
-    - ACI to Public Cloud Object mapping: object-map.md
+      - POD-01: pod1x.md
+      - POD-02: pod2x.md
+      - POD-03: pod3x.md
+      - POD-04: pod4x.md
+      - POD-05: pod5x.md
+      - POD-06: pod6x.md
+
     - Resources: resources.md
     - PRINT version: print_page/
 theme:

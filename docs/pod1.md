@@ -7,21 +7,20 @@
 
 ### **AWS Infrastructure Tenant**
 
-AWS Infra Account ID: <br> **283748374723**
+AWS Infra Account ID: <br> **856370776912**
 
 AWS Infra Account Username:<br> **student**
 
-AWS Infra Account Password:<br> **CiscoLive2023!**
+AWS Infra Account Password:<br> **CiscoLive2@23!**
 
 ### **AWS Infra resources**
 
 
 | Name           | Username       |Password        | Public IPv4 address | Description | 
 | -------------- | -------------- | -------------- | -------------- | -------------- | 
-| ND1-Master | admin | CiscoLive2023! | https://3.64.31.67 | Nexus Dashboard appliance | 
-| Cisco Cloud Network Controller | admin | CiscoLive2023! | https://3.74.53.64 | CNC-AWS-01 Cloud Network Controller | 
-| csr-[ct_routerp_eu-central-1_0:0] | csradmin | CiscoLive2023! | 3.74.87.151 | AWS Cloud Router 01 | 
-| csr-[ct_routerp_eu-central-1_1:0] | csradmin | CiscoLive2023! | 18.198.101.61 | AWS Cloud Router 02 | 
+| ND1 | admin | C1sco12345 | https://3.64.31.67 | Nexus Dashboard appliance | 
+| Cisco Cloud Network Controller | admin | CiscoLive2@23! | https://35.179.3.244/ | CNC-AWS-01 Cloud Network Controller | 
+
 
 
 ### **AWS User Tenant** 

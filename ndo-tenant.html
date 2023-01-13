@@ -327,10 +327,14 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="nexus-dasboard-orchestrator-tenant-configuration">Nexus Dasboard Orchestrator Tenant configuration</h1>
-<p>In this section we will configure our first Tenant, stretched between Azure and AWS. As Cloud Network Controller will be used for configuration, we need to make sure that CNC has privillages to make configuration changes in cloud providers. Will learn how to do it and when we need it. </p>
+<p>In this section you will configure your first Tenant, stretched between AWS and onprem.  </p>
 <p>Following diagram shows what is to about to be configured. </p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image49a.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image49a.png" width="800"/></a></p>
 <h2 id="tenant-creation-on-ndo">Tenant Creation on NDO</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Configuration will be fully deployed from <strong><em>Nexus Dashboard Orchestrator</em></strong>. All activities - except AWS Trust - will be done at NDO GUI.</p>
+</div>
 <p>On the Left navigation page click <strong>"Application Management" -&gt; "Tenant"</strong> and then <strong>"Add Tenant"</strong></p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image50.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image50.png" width="800"/></a></p>
 <p>Fill in Tenant details for name and description </p>
@@ -347,7 +351,7 @@
 </div>
 <p><strong>cAPIC site configuration</strong></p>
 <p>For AWS site we have 2 options - <strong>Untrusted</strong> with Cloud Access key and Secret or <strong>Trusted</strong>. In our case we would be using Trusted configuration. </p>
-<p>Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix </p>
+<p>Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix (<strong><em>OR ON RDP DESKTOP FILE</em></strong> to evaluate.)</p>
 <p>Fill in with your POD <strong> AWS User-Account ID</strong> and select <strong>Access Type</strong> as <strong>Trusted</strong>, hit <strong>Save</strong>. </p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image53.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image53.png" width="800"/></a></p>
 <p>Now configuration can be saved, leave assocaited user list empty as there are no additional users and hit <strong>Save</strong>.</p>

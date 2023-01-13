@@ -878,10 +878,12 @@ Onprem, Lab infrastructure contains Cisco Nexus Dashboard with Nexus Dashboard O
 <li>Amazon Web Services</li>
 <li>Private intrastructure on-prem</li>
 </ul>
-<p>You will have access to Cisco dCloud Workstation, where you will be able to open WEB GUI to:
-- Cisco Nexus Dashboard/NDO
-- Cisco APIC onprem
-- Cisco Nexus Controller - AWS</p>
+<p>You will have access to Cisco dCloud Workstation, where you will be able to open WEB GUI to:</p>
+<ul>
+<li>Cisco Nexus Dashboard/NDO onprem</li>
+<li>Cisco APIC onprem</li>
+<li>Cisco Network Controller (CNC) - hosted in AWS</li>
+</ul>
 <h2 id="lab_access-rdp-2-vpn-connection-to-dcloud-infrastructure">2. VPN connection to dCloud infrastructure</h2>
 <p>The entire lab for the session is built using Cisco dCloud environment.
 Details of the session are provided in POD assigned to you. You will find there "Connect VPN" link which allow you connection to dCloud session.
@@ -921,8 +923,8 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 <p>User password:</p>
 <div class="highlight"><pre><span></span><code>C1sco12345
 </code></pre></div>
-<h2 id="lab_access-rdp-3-accessing-cisco-cloud-network-controller-capic">3. Accessing Cisco Cloud Network Controller (cAPIC)</h2>
-<p>IP Address of your CNC will be provided during the lab in later stage. Each Pod has its own CNC, credentials to login are same for all of them:</p>
+<h2 id="lab_access-rdp-3-accessing-cisco-cloud-network-controller-cnc">3. Accessing Cisco Cloud Network Controller (CNC)</h2>
+<p>IP Address of your CNC will be provided during the lab in later stage. Each Pod has its own CNC, please open Chrome and by using Bookmark bar select <strong><em>Cloud Network Controller</em></strong>. Credentials to login are same for all of them:</p>
 <p>Username:</p>
 <div class="highlight"><pre><span></span><code>admin
 </code></pre></div>
@@ -971,12 +973,19 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 <p>Cisco Nexus Dashboard is a single launch point to monitor and scale across different sites, whether it is Cisco Application Centric Infrastructure™ (Cisco ACI®) fabric controllers, the Cisco® Application Policy Infrastructure Controller (APIC), Cisco Nexus Dashboard Fabric Controller (NDFC), or a Cloud APIC running in a public cloud provider environment. Cisco NX-OS with Cisco Nexus Dashboard Fabric Controller (NDFC) – formerly Cisco Data Center Network Manager (Cisco DCNM) – is available as a service on the Cisco Nexus Dashboard. With third-party services integrated in Nexus Dashboard, NetOps can achieve command and control over global network fabrics, optimizing performance and attaining insights into data center and cloud operations. Using Cisco Nexus Dashboard, DevOps can improve the application deployment experience for multicloud applications Infrastructure-as-Code (IaC) integrations. Developers describe in code the networking components and resources needed to run an application in a data center or cloud.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nexus-dashboard-aag_0.png" width = 800></p>
 <h3 id="nd-nexus-dashboard-overview">Nexus Dashboard overview</h3>
+<p>Go to dCloud RDP workstation. Open Chrome web browser and from bookmarks select <strong><em>Nexus Dashboard</em></strong>. Connect with login credentials:</p>
+<p>Username:</p>
+<div class="highlight"><pre><span></span><code>admin
+</code></pre></div>
+<p>User password:</p>
+<div class="highlight"><pre><span></span><code>C1sco12345
+</code></pre></div>
 <p>After login to your Nexus Dashboard, you will land in "One view" section. It is usually a world map or table with your sites configured to be maintain from ND.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-1.png" width = 800></p>
 <p>You can zoom in/out to see it more in details. </p>
-<p>By changing the view to table, you will have such details on the screen. <strong><em>Launch</em></strong> link will open you APIC GUI in new web browser tab.</p>
+<p>By changing the view to table by using <em>slider</em> marked in figure above, you will have such details on the screen. <strong><em>Launch</em></strong> link will open you APIC/CNC GUI in new web browser tab.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-2.png" width = 800></p>
-<p>By Clicking on <strong>Admin Console</strong> on Left navigation panel, you will be moved to System Overview Dashboard. Here you find information about your sites as well as Nexus Dashboard server status. You can check whether system is healthy, how many nodes in ND cluster you have, how many PODs/Deployments and Services are up and running. Simple graphical monitoring of entire system in one place.</p>
+<p>By Clicking on <strong>Admin Console</strong> on Left navigation panel (marked red on figure above), you will be moved to System Overview Dashboard. Here you find information about your sites as well as Nexus Dashboard server status. You can check whether system is healthy, how many nodes in ND cluster you have, how many PODs/Deployments and Services are up and running. Simple graphical monitoring of entire system in one place.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-3.png" width = 800></p>
 <p>To explore more, you can click on Left Navigation panel to find out details information about Nexus Dashboard:</p>
 <ul>
@@ -989,10 +998,10 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 </ul>
 <p>In next section you will explore Nexus Dashboard Orchestrator - service which is running on ND cluster.</p></section><section class="print-page" id="ndo"><h1 id="ndo-nexus-dashboard-orchestratorndo">Nexus Dashboard Orchestrator(NDO)</h1>
 <p><strong>Cisco Nexus Dashboard Orchestrator (NDO)</strong> provides consistent network and policy orchestration, scalability, and disaster recovery across multiple data centers through a single pane of glass while allowing the data center to go wherever the data is.</p>
-<p>NDO allows you to interconnect separate Cisco® Application Centric Infrastructure (Cisco ACI®) sites, Cisco Cloud ACI sites, and Cisco Nexus Dashboard Fabric Controller (NDFC) sites, each managed by its own controller (APIC cluster, NDFC cluster, or Cloud APIC instances in a public cloud). The on-premises sites (ACI or NDFC in the future) can be extended to different public clouds for hybrid-cloud deployments while cloud-first installations can be extended to multi-cloud deployments without on-premises sites. </p>
-<p>The single-pane network interconnect policy management and the consistent network workload and segmentation policy provided by NDO allows monitoring the health of the interconnected fabrics, enforcement of segmentation and security policies, and performance of all tasks required to define tenant intersite policies in APIC, NDFC, and cAPIC sites. </p>
+<p>NDO allows you to interconnect separate Cisco® Application Centric Infrastructure (Cisco ACI®) sites, Cisco Cloud ACI sites, and Cisco Nexus Dashboard Fabric Controller (NDFC) sites, each managed by its own controller (APIC cluster, NDFC cluster, or Cloud Network Controller instances in a public cloud). The on-premises sites (ACI or NDFC in the future) can be extended to different public clouds for hybrid-cloud deployments while cloud-first installations can be extended to multi-cloud deployments without on-premises sites. </p>
+<p>The single-pane network interconnect policy management and the consistent network workload and segmentation policy provided by NDO allows monitoring the health of the interconnected fabrics, enforcement of segmentation and security policies, and performance of all tasks required to define tenant intersite policies in APIC, NDFC, and CNC sites. </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image23a.png" width = 800></p>
-<p>● Key features and benefits</p>
+<h3 id="ndo-key-features-and-benefits">Key features and benefits</h3>
 <ul>
 <li>
 <p>Single pane of glass for administration and orchestration of multiple networking fabrics for both Cisco ACI and NDFC</p>
@@ -1016,7 +1025,7 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 <p>Scale out sites and leaf switches based on resource growth</p>
 </li>
 </ul>
-<p>●Use cases</p>
+<h3 id="ndo-use-cases">Use cases</h3>
 <p>There are several uses of Cisco Nexus Dashboard Orchestrator. Some of the main use cases include:</p>
 <ul>
 <li>
@@ -1037,6 +1046,7 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 </ul>
 <p><strong>Let's now explore possibilites of Cisco Nexus Dashboard Orchestrator!</strong></p>
 <h3 id="ndo-1-ndo-service-introduction">1. NDO Service Introduction</h3>
+<p>While you are connected to Nexus Dashboard GUI, now you will explore NDO dashboard. Follow the instructions.</p>
 <p><strong>Nexus Dashboard Orchestrator</strong> is already installed and enabled under <strong>"Service Catalog"</strong> inside <strong>"Installed Service"</strong> </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image27.png" width = 800></p>
 <p>Hit <strong>"Open"</strong> button in order to login </p>
@@ -1063,6 +1073,7 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image33.png" width = 800></p>
 <p>On the <strong>General Settings</strong> Page, normally you will configure your global settings for entire MultiSite interconnection. Here you have BGP as well as OSPF polices, which will be deployed to every Site specified on the Left.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image34.png" width = 800></p>
+<p>General Settings section is divided to four different tabs. Each of tab is important to fill with correct data. IPN devices and External devices tabs contains information about IPN onprem as well as Cloud Cat8k devices respectively. Those informations are then used to creation of configuration to be deployed on onprem IPN devices and Cat8kv. At last tab - IPSec Tunnel Subnet pools, contains details about Site to Site connection types.</p>
 <p>Go to tab <strong>"IPSec Tunnel Subnet Pools"</strong>, to specify your IPSec details for securing communication across public Internet.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image40.png" width = 800></p>
 <p>You may notice that there is already one subnet 169.254.0.0/16 configured, which is used for Tunnel addresing between Cloud Routers and Cloud Load Balancers(Azure)/Transit Gateways(AWS). Those tunnles are used to forward traffic from Cloud instances to Cloud Routers and further to another sites.
@@ -1091,10 +1102,14 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
                             Tenant configuration <a class='headerlink' href='#section-tenant-configuration' title='Permanent link'>↵</a>
                         </h1>
                         <section class="print-page" id="ndo-tenant"><h1 id="ndo-tenant-nexus-dasboard-orchestrator-tenant-configuration">Nexus Dasboard Orchestrator Tenant configuration</h1>
-<p>In this section we will configure our first Tenant, stretched between Azure and AWS. As Cloud Network Controller will be used for configuration, we need to make sure that CNC has privillages to make configuration changes in cloud providers. Will learn how to do it and when we need it. </p>
+<p>In this section you will configure your first Tenant, stretched between AWS and onprem.  </p>
 <p>Following diagram shows what is to about to be configured. </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image49a.png" width = 800></p>
 <h2 id="ndo-tenant-tenant-creation-on-ndo">Tenant Creation on NDO</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Configuration will be fully deployed from <strong><em>Nexus Dashboard Orchestrator</em></strong>. All activities - except AWS Trust - will be done at NDO GUI.</p>
+</div>
 <p>On the Left navigation page click <strong>"Application Management" -&gt; "Tenant"</strong> and then <strong>"Add Tenant"</strong></p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image50.png" width = 800></p>
 <p>Fill in Tenant details for name and description </p>
@@ -1111,7 +1126,7 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 </div>
 <p><strong>cAPIC site configuration</strong></p>
 <p>For AWS site we have 2 options - <strong>Untrusted</strong> with Cloud Access key and Secret or <strong>Trusted</strong>. In our case we would be using Trusted configuration. </p>
-<p>Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix </p>
+<p>Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix (<strong><em>OR ON RDP DESKTOP FILE</em></strong> to evaluate.)</p>
 <p>Fill in with your POD <strong> AWS User-Account ID</strong> and select <strong>Access Type</strong> as <strong>Trusted</strong>, hit <strong>Save</strong>. </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image53.png" width = 800></p>
 <p>Now configuration can be saved, leave assocaited user list empty as there are no additional users and hit <strong>Save</strong>.</p>
@@ -1119,32 +1134,9 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image54.png" width = 800></p>
 <p>In next step we will make AWS trust configuration, so CNC can make changes to AWS objects. </p>
 <p>You can find details about this process under <strong>Resources</strong> in <strong>Appendixes</strong> section of this Lab Guide. </p></section><section class="print-page" id="aws-trust"><h1 id="aws-trust-nexus-dasboard-orchestrator-tenant-aws-trust-configuration">Nexus Dasboard Orchestrator Tenant AWS Trust Configuration</h1>
-<p>In previous step we have selected Tenant configuration Mode as Trusted, so now trust needs to be made for Cloud Network Controller to have access to AWS Account. </p>
-<h2 id="aws-trust-aws-user-account-login">AWS User Account Login</h2>
-<p>Each User POD has two(2) AWS Accounts. </p>
-<ul>
-<li>1st for Infrastrucre Configuration </li>
-<li>2nd for Tenant Configuration </li>
-</ul>
-<p>Open AWS console via browser </p>
-<div class="highlight"><pre><span></span><code>https://console.aws.amazon.com
-</code></pre></div>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png" width = 400></p>
-<p>Select IAM user, provide Account ID and hit "Next" </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For this login please use AWS User Account ID from POD details</p>
-</div>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png" width = 300></p>
-<p>Provide Username and password and hit "Sign In" </p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png" width = 300></p>
-<p>You will land on the welcome page of AWS cloud console. </p>
+<p>In previous step you have selected Tenant configuration Mode as Trusted, so now trust needs to be made for Cloud Network Controller to have access to AWS Account. </p>
 <h2 id="aws-trust-aws-cloud-network-controller-login">AWS Cloud Network Controller Login</h2>
-<p>Using the IP of AWS Cisco Cloud Network Controller (can be found in Chrome bookmarks), connect to CNC GUI for AWS instance. Make sure to use the same browser in which you logged in for AWS User Tenant.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The trust configuration CloudFormation script needs to be executed on AWS User Account! </p>
-</div>
+<p>Using the IP of AWS Cisco Cloud Network Controller (can be found in Chrome bookmarks), connect to CNC GUI for AWS instance.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image60.png" width = 300></p>
 <p>Provide Credentials and hit <strong>Login</strong></p>
 <ul>
@@ -1158,12 +1150,23 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image63.png" width = 800></p>
 <p>Double-click the Tenant name <strong>"Tenant-01"</strong> to open it. </p>
 <p>Under the <strong>AWS Account</strong> section there is warning related to our Trust configuration, along with the <strong>"Run the CloudFormation Template"</strong> hyperlink. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Make sure you have executed CloudFormation link from AWS User Tenant!</p>
-</div>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image64.png" width = 800></p>
 <p>Click on the hyperlink to run CloudFormation Script. You will be then redirected to AWS console CloudFormation Stack configuration. </p>
+<p>In this time you will be asked to login go AWS console if not done before. If already loged in, please continue to <strong>CloudFormation script in AWS</strong>.</p>
+<h2 id="aws-trust-aws-user-account-login">AWS User Account Login</h2>
+<p>Open AWS console via browser </p>
+<div class="highlight"><pre><span></span><code>https://console.aws.amazon.com
+</code></pre></div>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png" width = 400></p>
+<p>Select IAM user, provide Account ID and hit "Next" </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For this login please use AWS User Account ID from POD details - Section <strong><em>Lab Access</em></strong>. Use data from POD# assigned to you in Wil Assistant portal or ask proctor for help.</p>
+</div>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png" width = 300></p>
+<p>Provide Username and password and hit "Sign In" </p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png" width = 300></p>
+<h2 id="aws-trust-cloudformation-script-in-aws">CloudFormation script in AWS</h2>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image65.png" width = 800></p>
 <p>All the parameters are already filled in, hit <strong>"Next"</strong> to continue. </p>
 <p>In <strong>Specify stack details</strong> step - fill in stack name and hit <strong>"Next"</strong></p>
@@ -1177,7 +1180,7 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image67.png" width = 800></p>
 <p>After couple of seconds(use refresh button) - stack will be completed and we are good to go. </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image68.png" width = 800></p>
-<p>After AWS trust configuration we have our Infrastruture and first Tenant ready to be used. In next section of the Lab we will procced to Use-Cases configuration. Two(2) use-cases we are about to configure are presenting typical real-life scenearios. </p></section><h1 class='nav-section-title-end'>Ended: Tenant configuration</h1>
+<p>After AWS trust configuration you have your first Tenant ready to be used. In next section of the Lab you will procced to Use-Cases configuration. Two(2) use-cases you are about to configure are presenting typical real-life scenearios. </p></section><h1 class='nav-section-title-end'>Ended: Tenant configuration</h1>
                         <h1 class='nav-section-title' id='section-use-cases'>
                             Use-cases <a class='headerlink' href='#section-use-cases' title='Permanent link'>↵</a>
                         </h1>
@@ -1192,7 +1195,7 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <li>Contract configuration to allow traffic flow </li>
 </ul>
 <h2 id="use-case1-schema-template-configuration">Schema, Template configuration</h2>
-<p>All logical polices and configuration are done in Nexus Dashboard Orchestratod via Schemas and Templates. Each Schema can have multiple Templates, but Template can belong to only one Schema. Each Template is also assocaited to one and only one Tenant. Template to site assoction will also define to which fabric (on prem or cloud) configration will be pushed, therefore is the smallest logical unit we can decide where changes are deployed. </p>
+<p>All logical polices and configuration are done in Nexus Dashboard Orchestratod via Schemas and Templates. Each Schema can have multiple Templates, but Template can belong to only one Schema. Each Template is also assocaited to one and only one Tenant. Template to site association will also define to which fabric (on prem or cloud) configration will be pushed, therefore is the smallest logical unit you can decide where changes are deployed. </p>
 <h3 id="use-case1-1-schema-creation">1. Schema creation</h3>
 <p>Navigate to <strong>Dashboard -&gt; Application Management -&gt; Schemas</strong>, then hit <strong>"Add Schema"</strong> </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image70.png" width = 800></p>
@@ -1214,7 +1217,7 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image73.png" width = 800></p>
 <h3 id="use-case1-3-template-to-site-association">3. Template to site association</h3>
 <p>For configuration in template to be deployed, appropriate sites need to be added. Sites added will decide to which fabric configuration will be pushed. </p>
-<p>For <strong>temp-stretch-01</strong>, we want to add both Azure and AWS sites. </p>
+<p>For <strong>temp-stretch-01</strong>, we want to add both on-prem and AWS sites. </p>
 <p>To do it under the <strong>Template Properties</strong> locate the <strong>Actions</strong> button and hit <strong>Sites Associations</strong></p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image76.png" width = 800></p>
 <p>Select both site <strong>on-prem</strong> and <strong>cAPIC</strong> and hit <strong>Ok</strong></p>
@@ -1236,7 +1239,7 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image79.png" width = 800></p>
 <p>Under the <strong>"Template Properties"</strong> hit <strong>"Add Region"</strong> button and select <strong>Region</strong> from the list and then hit  <strong>"Add CIDRs"</strong> button </p>
 <ul>
-<li><strong>Region:</strong> eu-central-1</li>
+<li><strong>Region:</strong> eu-west-2</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image80.png" width = 800></p>
 <p>Now we need to specify what subnet we would like to use in AWS cloud for that VPC. This subnet will be configure as VPC CIDR on AWS cloud and will be used for VM and endpoint addressing. </p>
@@ -1289,13 +1292,14 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p>Let's check now VRF on on-prem APIC.</p>
 <p>Open APIC GUI and go to Tenants section.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenants.png" width = 800></p>
-<p>Double-click at Tenant-1 to enter configuration of your freshly created Tenant - using deploy at NDO.</p>
+<p>Double-click at <strong>Tenant-1</strong> to enter configuration of your freshly created Tenant - using deploy at NDO.</p>
 <p>Go to Networking -&gt; VRFs to check if new VRF-01 is created.</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenant-vrf-1.png" width = 800></p>
 <p>As you can see, creation of new Tenant and VRF from NDO has been done successfully. Let's continue with next steps.</p>
 <h3 id="use-case1-3-additional-template-creation">3. Additional Template creation</h3>
 <p>As per our topology diagram, EPGs in each Site are separate. As current <strong>temp-stretch-01</strong> is associated with both sites. We need to create two(2) new templates in the <strong>Schema-T01</strong> schema, for on-prem and AWS cloud sites respectively. </p>
 <p>Use the <strong>"Add new Template"</strong> and create 2 new templates with following names. Similar to first template from <strong>Actions</strong> menu associate to respective sites. </p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image-95a.png" width = 800></p>
 <p><strong>AWS Template:</strong></p>
 <ul>
 <li>Template name: <strong>temp-AWS-01</strong></li>
@@ -1375,11 +1379,11 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 </ul>
 <p>Navigate to <strong>temp-on-prem-01</strong> template using <strong>View</strong> dropdown menu.
 Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png" width = 500></p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png" width = 800></p>
 <p>To add Gateway IP, scroll down right configuration section. You will find Gateway IP, click <strong>Add Subnet</strong>.</p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png" width = 500></p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png" width = 800></p>
 <p>Add new Subnet, leave rest or properties as is.</p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png" width = 500></p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png" width = 800></p>
 <p>When Bridge Domain BD-01 is ready, Continue with Application profile and EPG.</p>
 <p>Navigate to <strong>temp-on-prem-01</strong> template using <strong>View</strong> dropdown menu. </p>
 <p>Add <strong>Application Profile</strong> using <strong>Add Application Profile</strong> button. </p>
@@ -1528,7 +1532,7 @@ Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image120.png" width = 800></p>
 <p>Review summary and hit <strong>"Launch instance"</strong> to create Virtual Machine</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image121.png" width = 400></p>
-<p>It may take 3-5 minutes for instance to be ready - you may jump to next step and deploy instance in Azure, then come back here for verification. </p>
+<p>It may take 3-5 minutes for instance to be ready. </p>
 <h3 id="use-case1-2-aws-ec2-verification">2. AWS EC2 verification</h3>
 <p>Go back to EC2 -&gt; Instances and locate your EC2 machine. Click on Instance-ID of you machine to open it. </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image122.png" width = 800></p>
@@ -1565,7 +1569,7 @@ Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p
 <li>Virutal Routing &amp; Forwarding: <strong>VRF-01</strong> </li>
 <li>Select Site Type: <strong>CLOUD</strong> </li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image174.png" width = 800>   </p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image174.png" width = 500>   </p>
 <ul>
 <li>
 <p>Cloud Properties: </p>
@@ -1587,7 +1591,7 @@ Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p
 <p>Hit <strong>Save</strong> to finish. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Adding the "0.0.0.0/0" subnet will add additional route to this prefix, pointing to internet gateway object create in AWS. In case only specyfic prefixes should be rechable, you can use differnt subnet that 0.0.0.0/0. </p>
+<p>Adding the "0.0.0.0/0" subnet will add additional route to this prefix, pointing to internet gateway object create in AWS. In case only specific prefixes should be rechable, you can use differnt subnet that 0.0.0.0/0. </p>
 </div>
 <h3 id="use-case2-contract-configuration">Contract configuration</h3>
 <p>As External EPG is functioning as any other EPG, contract configuration from EPG to External EPG is mandatory for traffic to be allowed. </p>
@@ -1632,7 +1636,7 @@ Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p
 </ul>
 </li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image175.png" width = 800></p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image175.png" width = 500></p>
 <p>Hit <strong>Save</strong> to finish contract configuration. </p>
 <p>Hit <strong>Deploy to sites</strong> for contracts to be pushed. </p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-2-deploy-1.png" width = 800></p>
@@ -1672,17 +1676,11 @@ Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p
 </ul>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image178.png" width = 800></p>
 <p>Hit <strong>Deploy to sites</strong> to create IGW and deploy contracts associations. </p>
-<h2 id="use-case2-veryfication">Veryfication</h2>
+<h2 id="use-case2-verification">Verification</h2>
 <p>Let's check if AWS EC2 instance is now reachable from internet. </p>
-<h3 id="use-case2-1-open-aws-console-via-browser">1. Open AWS console via browser</h3>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png" width = 400></p>
-<h3 id="use-case2-2-select-iam-user-provide-account-id-for-user-tenant-and-hit-next">2. Select IAM user,  provide Account ID for User tenant and hit "Next"</h3>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png" width = 300></p>
-<h3 id="use-case2-3-provide-username-and-password-and-hit-sign-in">3. Provide Username and password and hit "Sign In"</h3>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png" width = 300></p>
-<h3 id="use-case2-4-in-aws-search-bar-type-ec2-and-select-ec2-services-tab">4. In AWS Search Bar type "EC2" and Select "EC2" Services Tab</h3>
+<h3 id="use-case2-1-in-aws-search-bar-type-ec2-and-select-ec2-services-tab">1. In AWS Search Bar type "EC2" and Select "EC2" Services Tab</h3>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image6.png" width = 800></p>
-<h3 id="use-case2-5-from-resources-select-instances-running">5. From "Resources" select "Instances (Running)"</h3>
+<h3 id="use-case2-2-from-resources-select-instances-running">2. From "Resources" select "Instances (Running)"</h3>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image7.png" width = 800></p>
 <p>Locate Public IPv4 Address of EC2 instance, either on the EC2 instance list or under Details section</p>
 <p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image179.png" width = 800></p>

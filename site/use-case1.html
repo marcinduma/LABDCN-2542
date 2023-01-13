@@ -529,7 +529,7 @@
 <li>Contract configuration to allow traffic flow </li>
 </ul>
 <h2 id="schema-template-configuration">Schema, Template configuration</h2>
-<p>All logical polices and configuration are done in Nexus Dashboard Orchestratod via Schemas and Templates. Each Schema can have multiple Templates, but Template can belong to only one Schema. Each Template is also assocaited to one and only one Tenant. Template to site assoction will also define to which fabric (on prem or cloud) configration will be pushed, therefore is the smallest logical unit we can decide where changes are deployed. </p>
+<p>All logical polices and configuration are done in Nexus Dashboard Orchestratod via Schemas and Templates. Each Schema can have multiple Templates, but Template can belong to only one Schema. Each Template is also assocaited to one and only one Tenant. Template to site association will also define to which fabric (on prem or cloud) configration will be pushed, therefore is the smallest logical unit you can decide where changes are deployed. </p>
 <h3 id="1-schema-creation">1. Schema creation</h3>
 <p>Navigate to <strong>Dashboard -&gt; Application Management -&gt; Schemas</strong>, then hit <strong>"Add Schema"</strong> </p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image70.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image70.png" width="800"/></a></p>
@@ -551,7 +551,7 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image73.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image73.png" width="800"/></a></p>
 <h3 id="3-template-to-site-association">3. Template to site association</h3>
 <p>For configuration in template to be deployed, appropriate sites need to be added. Sites added will decide to which fabric configuration will be pushed. </p>
-<p>For <strong>temp-stretch-01</strong>, we want to add both Azure and AWS sites. </p>
+<p>For <strong>temp-stretch-01</strong>, we want to add both on-prem and AWS sites. </p>
 <p>To do it under the <strong>Template Properties</strong> locate the <strong>Actions</strong> button and hit <strong>Sites Associations</strong></p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image76.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image76.png" width="800"/></a></p>
 <p>Select both site <strong>on-prem</strong> and <strong>cAPIC</strong> and hit <strong>Ok</strong></p>
@@ -573,7 +573,7 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image79.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image79.png" width="800"/></a></p>
 <p>Under the <strong>"Template Properties"</strong> hit <strong>"Add Region"</strong> button and select <strong>Region</strong> from the list and then hit  <strong>"Add CIDRs"</strong> button </p>
 <ul>
-<li><strong>Region:</strong> eu-central-1</li>
+<li><strong>Region:</strong> eu-west-2</li>
 </ul>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image80.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image80.png" width="800"/></a></p>
 <p>Now we need to specify what subnet we would like to use in AWS cloud for that VPC. This subnet will be configure as VPC CIDR on AWS cloud and will be used for VM and endpoint addressing. </p>
@@ -626,13 +626,14 @@
 <p>Let's check now VRF on on-prem APIC.</p>
 <p>Open APIC GUI and go to Tenants section.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenants.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenants.png" width="800"/></a></p>
-<p>Double-click at Tenant-1 to enter configuration of your freshly created Tenant - using deploy at NDO.</p>
+<p>Double-click at <strong>Tenant-1</strong> to enter configuration of your freshly created Tenant - using deploy at NDO.</p>
 <p>Go to Networking -&gt; VRFs to check if new VRF-01 is created.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenant-vrf-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenant-vrf-1.png" width="800"/></a></p>
 <p>As you can see, creation of new Tenant and VRF from NDO has been done successfully. Let's continue with next steps.</p>
 <h3 id="3-additional-template-creation">3. Additional Template creation</h3>
 <p>As per our topology diagram, EPGs in each Site are separate. As current <strong>temp-stretch-01</strong> is associated with both sites. We need to create two(2) new templates in the <strong>Schema-T01</strong> schema, for on-prem and AWS cloud sites respectively. </p>
 <p>Use the <strong>"Add new Template"</strong> and create 2 new templates with following names. Similar to first template from <strong>Actions</strong> menu associate to respective sites. </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image-95a.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image-95a.png" width="800"/></a></p>
 <p><strong>AWS Template:</strong></p>
 <ul>
 <li>Template name: <strong>temp-AWS-01</strong></li>
@@ -712,11 +713,11 @@
 </ul>
 <p>Navigate to <strong>temp-on-prem-01</strong> template using <strong>View</strong> dropdown menu.
 Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png" width="500"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png" width="800"/></a></p>
 <p>To add Gateway IP, scroll down right configuration section. You will find Gateway IP, click <strong>Add Subnet</strong>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png" width="500"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png" width="800"/></a></p>
 <p>Add new Subnet, leave rest or properties as is.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png" width="500"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png" width="800"/></a></p>
 <p>When Bridge Domain BD-01 is ready, Continue with Application profile and EPG.</p>
 <p>Navigate to <strong>temp-on-prem-01</strong> template using <strong>View</strong> dropdown menu. </p>
 <p>Add <strong>Application Profile</strong> using <strong>Add Application Profile</strong> button. </p>
@@ -865,7 +866,7 @@ Scroll down to <em>Brdige Domain</em> section and click on Add Bridge Domain </p
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image120.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image120.png" width="800"/></a></p>
 <p>Review summary and hit <strong>"Launch instance"</strong> to create Virtual Machine</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image121.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image121.png" width="400"/></a></p>
-<p>It may take 3-5 minutes for instance to be ready - you may jump to next step and deploy instance in Azure, then come back here for verification. </p>
+<p>It may take 3-5 minutes for instance to be ready. </p>
 <h3 id="2-aws-ec2-verification">2. AWS EC2 verification</h3>
 <p>Go back to EC2 -&gt; Instances and locate your EC2 machine. Click on Instance-ID of you machine to open it. </p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image122.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image122.png" width="800"/></a></p>

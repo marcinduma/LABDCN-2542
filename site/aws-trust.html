@@ -195,13 +195,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#aws-cloud-network-controller-login">
+    AWS Cloud Network Controller Login
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#aws-user-account-login">
     AWS User Account Login
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aws-cloud-network-controller-login">
-    AWS Cloud Network Controller Login
+<a class="md-nav__link" href="#cloudformation-script-in-aws">
+    CloudFormation script in AWS
   </a>
 </li>
 </ul>
@@ -320,13 +325,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#aws-cloud-network-controller-login">
+    AWS Cloud Network Controller Login
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#aws-user-account-login">
     AWS User Account Login
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#aws-cloud-network-controller-login">
-    AWS Cloud Network Controller Login
+<a class="md-nav__link" href="#cloudformation-script-in-aws">
+    CloudFormation script in AWS
   </a>
 </li>
 </ul>
@@ -337,32 +347,9 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="nexus-dasboard-orchestrator-tenant-aws-trust-configuration">Nexus Dasboard Orchestrator Tenant AWS Trust Configuration</h1>
-<p>In previous step we have selected Tenant configuration Mode as Trusted, so now trust needs to be made for Cloud Network Controller to have access to AWS Account. </p>
-<h2 id="aws-user-account-login">AWS User Account Login</h2>
-<p>Each User POD has two(2) AWS Accounts. </p>
-<ul>
-<li>1st for Infrastrucre Configuration </li>
-<li>2nd for Tenant Configuration </li>
-</ul>
-<p>Open AWS console via browser </p>
-<div class="highlight"><pre><span></span><code>https://console.aws.amazon.com
-</code></pre></div>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png" width="400"/></a></p>
-<p>Select IAM user, provide Account ID and hit "Next" </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For this login please use AWS User Account ID from POD details</p>
-</div>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png" width="300"/></a></p>
-<p>Provide Username and password and hit "Sign In" </p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png" width="300"/></a></p>
-<p>You will land on the welcome page of AWS cloud console. </p>
+<p>In previous step you have selected Tenant configuration Mode as Trusted, so now trust needs to be made for Cloud Network Controller to have access to AWS Account. </p>
 <h2 id="aws-cloud-network-controller-login">AWS Cloud Network Controller Login</h2>
-<p>Using the IP of AWS Cisco Cloud Network Controller (can be found in Chrome bookmarks), connect to CNC GUI for AWS instance. Make sure to use the same browser in which you logged in for AWS User Tenant.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The trust configuration CloudFormation script needs to be executed on AWS User Account! </p>
-</div>
+<p>Using the IP of AWS Cisco Cloud Network Controller (can be found in Chrome bookmarks), connect to CNC GUI for AWS instance.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image60.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image60.png" width="300"/></a></p>
 <p>Provide Credentials and hit <strong>Login</strong></p>
 <ul>
@@ -376,12 +363,23 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image63.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image63.png" width="800"/></a></p>
 <p>Double-click the Tenant name <strong>"Tenant-01"</strong> to open it. </p>
 <p>Under the <strong>AWS Account</strong> section there is warning related to our Trust configuration, along with the <strong>"Run the CloudFormation Template"</strong> hyperlink. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Make sure you have executed CloudFormation link from AWS User Tenant!</p>
-</div>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image64.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image64.png" width="800"/></a></p>
 <p>Click on the hyperlink to run CloudFormation Script. You will be then redirected to AWS console CloudFormation Stack configuration. </p>
+<p>In this time you will be asked to login go AWS console if not done before. If already loged in, please continue to <strong>CloudFormation script in AWS</strong>.</p>
+<h2 id="aws-user-account-login">AWS User Account Login</h2>
+<p>Open AWS console via browser </p>
+<div class="highlight"><pre><span></span><code>https://console.aws.amazon.com
+</code></pre></div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png" width="400"/></a></p>
+<p>Select IAM user, provide Account ID and hit "Next" </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For this login please use AWS User Account ID from POD details - Section <strong><em>Lab Access</em></strong>. Use data from POD# assigned to you in Wil Assistant portal or ask proctor for help.</p>
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png" width="300"/></a></p>
+<p>Provide Username and password and hit "Sign In" </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png" width="300"/></a></p>
+<h2 id="cloudformation-script-in-aws">CloudFormation script in AWS</h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image65.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image65.png" width="800"/></a></p>
 <p>All the parameters are already filled in, hit <strong>"Next"</strong> to continue. </p>
 <p>In <strong>Specify stack details</strong> step - fill in stack name and hit <strong>"Next"</strong></p>
@@ -395,7 +393,7 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image67.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image67.png" width="800"/></a></p>
 <p>After couple of seconds(use refresh button) - stack will be completed and we are good to go. </p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image68.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image68.png" width="800"/></a></p>
-<p>After AWS trust configuration we have our Infrastruture and first Tenant ready to be used. In next section of the Lab we will procced to Use-Cases configuration. Two(2) use-cases we are about to configure are presenting typical real-life scenearios. </p>
+<p>After AWS trust configuration you have your first Tenant ready to be used. In next section of the Lab you will procced to Use-Cases configuration. Two(2) use-cases you are about to configure are presenting typical real-life scenearios. </p>
 </article>
 </div>
 </div>

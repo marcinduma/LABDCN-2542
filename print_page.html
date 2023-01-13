@@ -1079,7 +1079,7 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 <p>You may notice that there is already one subnet 169.254.0.0/16 configured, which is used for Tunnel addresing between Cloud Routers and Cloud Load Balancers(Azure)/Transit Gateways(AWS). Those tunnles are used to forward traffic from Cloud instances to Cloud Routers and further to another sites.
 Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Sites in our case onpmrem CSR1kv router and Cat8kv routers in AWS.</p>
 <p>In the left navigation bar, under the Sites bar, click on first site <strong>cAPIC</strong></p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image35.png" width = 200></p>
+<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image35.png" width = 800></p>
 <p>You can verify site configuration on right side of the screen. Those information needs to be there.</p>
 <div class="highlight"><pre><span></span><code>Settings:
 - ACI Multisite - checked 
@@ -1137,7 +1137,6 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 <p>In previous step you have selected Tenant configuration Mode as Trusted, so now trust needs to be made for Cloud Network Controller to have access to AWS Account. </p>
 <h2 id="aws-trust-aws-cloud-network-controller-login">AWS Cloud Network Controller Login</h2>
 <p>Using the IP of AWS Cisco Cloud Network Controller (can be found in Chrome bookmarks), connect to CNC GUI for AWS instance.</p>
-<p><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image60.png" width = 300></p>
 <p>Provide Credentials and hit <strong>Login</strong></p>
 <ul>
 <li>Username: admin </li>

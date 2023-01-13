@@ -13,7 +13,7 @@ First use-case task will focus on:
 
 ## Schema, Template configuration 
 
-All logical polices and configuration are done in Nexus Dashboard Orchestratod via Schemas and Templates. Each Schema can have multiple Templates, but Template can belong to only one Schema. Each Template is also assocaited to one and only one Tenant. Template to site assoction will also define to which fabric (on prem or cloud) configration will be pushed, therefore is the smallest logical unit we can decide where changes are deployed. 
+All logical polices and configuration are done in Nexus Dashboard Orchestratod via Schemas and Templates. Each Schema can have multiple Templates, but Template can belong to only one Schema. Each Template is also assocaited to one and only one Tenant. Template to site association will also define to which fabric (on prem or cloud) configration will be pushed, therefore is the smallest logical unit you can decide where changes are deployed. 
 
 ### 1. Schema creation 
 
@@ -47,7 +47,7 @@ On the right side of the template screen, we can customize the Tempalte Display 
 
 For configuration in template to be deployed, appropriate sites need to be added. Sites added will decide to which fabric configuration will be pushed. 
 
-For **temp-stretch-01**, we want to add both Azure and AWS sites. 
+For **temp-stretch-01**, we want to add both on-prem and AWS sites. 
 
 To do it under the **Template Properties** locate the **Actions** button and hit **Sites Associations**
 
@@ -84,7 +84,7 @@ Click on the **"VRF-01"** which opens **Site specific properties** for this **cA
 
 Under the **"Template Properties"** hit **"Add Region"** button and select **Region** from the list and then hit  **"Add CIDRs"** button 
 
- - **Region:** eu-central-1
+ - **Region:** eu-west-2
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image80.png" width = 800>
 
@@ -166,7 +166,7 @@ Open APIC GUI and go to Tenants section.
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-tenants.png" width = 800>
 
-Double-click at Tenant-1 to enter configuration of your freshly created Tenant - using deploy at NDO.
+Double-click at **Tenant-1** to enter configuration of your freshly created Tenant - using deploy at NDO.
 
 Go to Networking -> VRFs to check if new VRF-01 is created.
 
@@ -179,6 +179,8 @@ As you can see, creation of new Tenant and VRF from NDO has been done successful
 As per our topology diagram, EPGs in each Site are separate. As current **temp-stretch-01** is associated with both sites. We need to create two(2) new templates in the **Schema-T01** schema, for on-prem and AWS cloud sites respectively. 
 
 Use the **"Add new Template"** and create 2 new templates with following names. Similar to first template from **Actions** menu associate to respective sites. 
+
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image-95a.png" width = 800>
 
 **AWS Template:**
 
@@ -280,15 +282,15 @@ In onprem ACI deployment, EPG is still assigned to Bridge-Domain. Before you cre
 Navigate to **temp-on-prem-01** template using **View** dropdown menu.
 Scroll down to *Brdige Domain* section and click on Add Bridge Domain 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png" width = 500>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-1.png" width = 800>
 
 To add Gateway IP, scroll down right configuration section. You will find Gateway IP, click **Add Subnet**.
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png" width = 500>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet.png" width = 800>
 
 Add new Subnet, leave rest or properties as is.
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png" width = 500>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/uc-1-bd-subnet-1.png" width = 800>
 
 When Bridge Domain BD-01 is ready, Continue with Application profile and EPG.
 
@@ -482,7 +484,7 @@ Review summary and hit **"Launch instance"** to create Virtual Machine
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image121.png" width = 400>
 
-It may take 3-5 minutes for instance to be ready - you may jump to next step and deploy instance in Azure, then come back here for verification. 
+It may take 3-5 minutes for instance to be ready. 
 
 
 ### 2. AWS EC2 verification 

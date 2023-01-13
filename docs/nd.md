@@ -10,17 +10,27 @@ Cisco Nexus Dashboard is a single launch point to monitor and scale across diffe
 
 ### Nexus Dashboard overview
 
+Go to dCloud RDP workstation. Open Chrome web browser and from bookmarks select ***Nexus Dashboard***. Connect with login credentials:
+
+Username:
+	
+	admin
+
+User password:
+	
+	C1sco12345
+
 After login to your Nexus Dashboard, you will land in "One view" section. It is usually a world map or table with your sites configured to be maintain from ND.
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-1.png" width = 800>
 
 You can zoom in/out to see it more in details. 
 
-By changing the view to table, you will have such details on the screen. ***Launch*** link will open you APIC GUI in new web browser tab.
+By changing the view to table by using *slider* marked in figure above, you will have such details on the screen. ***Launch*** link will open you APIC/CNC GUI in new web browser tab.
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-2.png" width = 800>
 
-By Clicking on **Admin Console** on Left navigation panel, you will be moved to System Overview Dashboard. Here you find information about your sites as well as Nexus Dashboard server status. You can check whether system is healthy, how many nodes in ND cluster you have, how many PODs/Deployments and Services are up and running. Simple graphical monitoring of entire system in one place.
+By Clicking on **Admin Console** on Left navigation panel (marked red on figure above), you will be moved to System Overview Dashboard. Here you find information about your sites as well as Nexus Dashboard server status. You can check whether system is healthy, how many nodes in ND cluster you have, how many PODs/Deployments and Services are up and running. Simple graphical monitoring of entire system in one place.
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-3.png" width = 800>
 

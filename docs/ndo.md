@@ -2,13 +2,13 @@
 
 **Cisco Nexus Dashboard Orchestrator (NDO)** provides consistent network and policy orchestration, scalability, and disaster recovery across multiple data centers through a single pane of glass while allowing the data center to go wherever the data is.
 
-NDO allows you to interconnect separate Cisco® Application Centric Infrastructure (Cisco ACI®) sites, Cisco Cloud ACI sites, and Cisco Nexus Dashboard Fabric Controller (NDFC) sites, each managed by its own controller (APIC cluster, NDFC cluster, or Cloud APIC instances in a public cloud). The on-premises sites (ACI or NDFC in the future) can be extended to different public clouds for hybrid-cloud deployments while cloud-first installations can be extended to multi-cloud deployments without on-premises sites. 
+NDO allows you to interconnect separate Cisco® Application Centric Infrastructure (Cisco ACI®) sites, Cisco Cloud ACI sites, and Cisco Nexus Dashboard Fabric Controller (NDFC) sites, each managed by its own controller (APIC cluster, NDFC cluster, or Cloud Network Controller instances in a public cloud). The on-premises sites (ACI or NDFC in the future) can be extended to different public clouds for hybrid-cloud deployments while cloud-first installations can be extended to multi-cloud deployments without on-premises sites. 
 
-The single-pane network interconnect policy management and the consistent network workload and segmentation policy provided by NDO allows monitoring the health of the interconnected fabrics, enforcement of segmentation and security policies, and performance of all tasks required to define tenant intersite policies in APIC, NDFC, and cAPIC sites. 
+The single-pane network interconnect policy management and the consistent network workload and segmentation policy provided by NDO allows monitoring the health of the interconnected fabrics, enforcement of segmentation and security policies, and performance of all tasks required to define tenant intersite policies in APIC, NDFC, and CNC sites. 
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image23a.png" width = 800>
 
-● Key features and benefits
+### Key features and benefits
 
 -     Single pane of glass for administration and orchestration of multiple networking fabrics for both Cisco ACI and NDFC
 
@@ -24,7 +24,7 @@ The single-pane network interconnect policy management and the consistent networ
 
 -     Scale out sites and leaf switches based on resource growth
 
-●Use cases
+### Use cases
 
 There are several uses of Cisco Nexus Dashboard Orchestrator. Some of the main use cases include:
 
@@ -41,6 +41,8 @@ There are several uses of Cisco Nexus Dashboard Orchestrator. Some of the main u
 **Let's now explore possibilites of Cisco Nexus Dashboard Orchestrator!**
 
 ### 1. NDO Service Introduction
+
+While you are connected to Nexus Dashboard GUI, now you will explore NDO dashboard. Follow the instructions.
 
 **Nexus Dashboard Orchestrator** is already installed and enabled under **"Service Catalog"** inside **"Installed Service"** 
 

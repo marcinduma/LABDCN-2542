@@ -10,6 +10,8 @@ On the **General Settings** Page, normally you will configure your global settin
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image34.png" width = 800>
 
+General Settings section is divided to four different tabs. Each of tab is important to fill with correct data. IPN devices and External devices tabs contains information about IPN onprem as well as Cloud Cat8k devices respectively. Those informations are then used to creation of configuration to be deployed on onprem IPN devices and Cat8kv. At last tab - IPSec Tunnel Subnet pools, contains details about Site to Site connection types.
+
 Go to tab **"IPSec Tunnel Subnet Pools"**, to specify your IPSec details for securing communication across public Internet.
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image40.png" width = 800>

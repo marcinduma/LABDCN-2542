@@ -1,12 +1,16 @@
 # Nexus Dasboard Orchestrator Tenant configuration 
 
-In this section we will configure our first Tenant, stretched between Azure and AWS. As Cloud Network Controller will be used for configuration, we need to make sure that CNC has privillages to make configuration changes in cloud providers. Will learn how to do it and when we need it. 
+In this section you will configure your first Tenant, stretched between AWS and onprem.  
 
 Following diagram shows what is to about to be configured. 
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image49a.png" width = 800>
 
 ## Tenant Creation on NDO 
+
+!!!Info
+	Configuration will be fully deployed from ***Nexus Dashboard Orchestrator***. All activities - except AWS Trust - will be done at NDO GUI.
+
 
 On the Left navigation page click **"Application Management" -> "Tenant"** and then **"Add Tenant"**
 
@@ -30,7 +34,7 @@ Associate Tenant to both Sites by checking the checkbox next to it.
 
 For AWS site we have 2 options - **Untrusted** with Cloud Access key and Secret or **Trusted**. In our case we would be using Trusted configuration. 
 
-Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix 
+Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix (***OR ON RDP DESKTOP FILE*** to evaluate.)
 
 Fill in with your POD ** AWS User-Account ID** and select **Access Type** as **Trusted**, hit **Save**. 
 

@@ -8,9 +8,10 @@ The lab has been built leveraging multiple environments as following:
 - Private intrastructure on-prem
 
 You will have access to Cisco dCloud Workstation, where you will be able to open WEB GUI to:
-- Cisco Nexus Dashboard/NDO
+
+- Cisco Nexus Dashboard/NDO onprem
 - Cisco APIC onprem
-- Cisco Nexus Controller - AWS
+- Cisco Network Controller (CNC) - hosted in AWS
 
 
 ## 2. VPN connection to dCloud infrastructure
@@ -72,9 +73,9 @@ User password:
 	C1sco12345
 
 
-## 3. Accessing Cisco Cloud Network Controller (cAPIC)
+## 3. Accessing Cisco Cloud Network Controller (CNC)
 
-IP Address of your CNC will be provided during the lab in later stage. Each Pod has its own CNC, credentials to login are same for all of them:
+IP Address of your CNC will be provided during the lab in later stage. Each Pod has its own CNC, please open Chrome and by using Bookmark bar select ***Cloud Network Controller***. Credentials to login are same for all of them:
 
 Username:
 	

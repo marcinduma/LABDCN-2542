@@ -26,7 +26,7 @@ Under View select **"temp-AWS-01"** and hit **"Add External EPGs"** under **Exte
 - Virutal Routing & Forwarding: **VRF-01** 
 - Select Site Type: **CLOUD** 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image174.png" width = 800>   
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image174.png" width = 500>   
 
 - Cloud Properties: 
 
@@ -43,7 +43,7 @@ Under View select **"temp-AWS-01"** and hit **"Add External EPGs"** under **Exte
 Hit **Save** to finish. 
 
 !!! Info 
-    Adding the "0.0.0.0/0" subnet will add additional route to this prefix, pointing to internet gateway object create in AWS. In case only specyfic prefixes should be rechable, you can use differnt subnet that 0.0.0.0/0. 
+    Adding the "0.0.0.0/0" subnet will add additional route to this prefix, pointing to internet gateway object create in AWS. In case only specific prefixes should be rechable, you can use differnt subnet that 0.0.0.0/0. 
 
 ### Contract configuration
 
@@ -93,7 +93,7 @@ Hit **Save** to finish contract configuration.
     - Apply both direction: **yes**
     - Add Filter: **permit-any-AWS**
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image175.png" width = 800>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image175.png" width = 500>
 
 Hit **Save** to finish contract configuration. 
 
@@ -146,27 +146,15 @@ Contract 2:
 
 Hit **Deploy to sites** to create IGW and deploy contracts associations. 
 
-## Veryfication 
+## Verification 
 
 Let's check if AWS EC2 instance is now reachable from internet. 
 
-### 1. Open AWS console via browser 
-
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image3.png" width = 400>
-
-### 2. Select IAM user,  provide Account ID for User tenant and hit "Next" 
-
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image4.png" width = 300>
-
-### 3. Provide Username and password and hit "Sign In" 
-
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image5.png" width = 300>
-
-### 4. In AWS Search Bar type "EC2" and Select "EC2" Services Tab
+### 1. In AWS Search Bar type "EC2" and Select "EC2" Services Tab
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image6.png" width = 800>
 
-### 5. From "Resources" select "Instances (Running)"
+### 2. From "Resources" select "Instances (Running)"
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image7.png" width = 800>
 

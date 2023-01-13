@@ -7,8 +7,6 @@ In previous step you have selected Tenant configuration Mode as Trusted, so now 
 Using the IP of AWS Cisco Cloud Network Controller (can be found in Chrome bookmarks), connect to CNC GUI for AWS instance.
 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image60.png" width = 300>
-
 Provide Credentials and hit **Login**
 
 - Username: admin 

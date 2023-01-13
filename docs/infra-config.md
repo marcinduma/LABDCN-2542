@@ -21,7 +21,7 @@ Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Site
 
 In the left navigation bar, under the Sites bar, click on first site **cAPIC**
 
-<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image35.png" width = 200>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image35.png" width = 800>
 
 You can verify site configuration on right side of the screen. Those information needs to be there.
     

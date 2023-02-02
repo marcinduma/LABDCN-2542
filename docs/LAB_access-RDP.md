@@ -95,10 +95,5 @@ AWS console login link:
 [https://console.aws.amazon.com](https://console.aws.amazon.com){target=_blank}
 
 
-Information about account details as well as credentials are available in per POD sections listed in table below. Make sure to use corresponding POD ID from WiL dashboard.  
+Information about account details as well as credentials are available in per POD sections listed in wilassistant. 
 
-| Attendee Name           | POD ID       | POD access details       |
-| -------------- | -------------- | -------------- |
-| Student 1 | POD1 | [Lab Details POD1](pod1x.md)|
-| Student 2 | POD2 | [Lab Details POD2](pod1x.md)|
-| Student 3 | POD3 | [Lab Details POD3](pod1x.md)|

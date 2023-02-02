@@ -17,14 +17,6 @@ nav:
     - Use-case 01 - Stretched VRF: use-case1.md
     - Use-case 02 - Internet Gateway: use-case2.md
   - Appendixes:
-    - Lab details:
-      - POD-01: pod1x.md
-      - POD-02: pod2x.md
-      - POD-03: pod3x.md
-      - POD-04: pod4x.md
-      - POD-05: pod5x.md
-      - POD-06: pod6x.md
-
     - Resources: resources.md
     - PRINT version: print_page/
 theme:

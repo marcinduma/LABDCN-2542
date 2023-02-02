@@ -327,7 +327,7 @@ Once done confirmation will pop up on the screen.
 
 ### 1. Filter creation
 
-In order to create Contract, we need to have a filter which defines what type of traffis is allowed or denied under specyfic contract subject. Filter can define what ports and protocols are matched by specyfic rule.
+In order to create Contract, we need to have a filter which defines what type of traffis is allowed or denied under specific contract subject. Filter can define what ports and protocols are matched by specific rule.
 
 Open Nexus Dashboard Orchestrator GUI then go to **Application Management -> Schemas -> "Schema-T01"** -> open 
 

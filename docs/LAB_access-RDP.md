@@ -2,7 +2,7 @@
 
 ## 1. Lab access general description
 
-The lab has been built leveraging multiple environments as following:
+The lab has been built leveraging two environments as following:
 
 - Amazon Web Services
 - Private intrastructure on-prem
@@ -94,9 +94,6 @@ AWS console login link:
 
 [https://console.aws.amazon.com](https://console.aws.amazon.com){target=_blank}
 
-Azure portal login link: 
-
-[https://portal.azure.com](https://portal.azure.com){target=_blank}
 
 Information about account details as well as credentials are available in per POD sections listed in table below. Make sure to use corresponding POD ID from WiL dashboard.  
 

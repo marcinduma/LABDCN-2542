@@ -16,8 +16,9 @@ Go to tab **"IPSec Tunnel Subnet Pools"**, to specify your IPSec details for sec
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image40.png" width = 800>
 
-You may notice that there is already one subnet 169.254.0.0/16 configured, which is used for Tunnel addresing between Cloud Routers and Cloud Load Balancers(Azure)/Transit Gateways(AWS). Those tunnles are used to forward traffic from Cloud instances to Cloud Routers and further to another sites.
-Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Sites in our case onpmrem CSR1kv router and Cat8kv routers in AWS.
+!!! Info
+	You may notice that there is already one subnet 169.254.0.0/16 configured, which is used for Tunnel addresing between Cloud Routers and Cloud Load Balancers(Azure)/Transit Gateways(AWS). Those tunnles are used to forward traffic from Cloud instances to Cloud Routers and further to another sites.
+	Second subnet 192.168.255.0/24 is used to address Tunnel interfaces between Sites in our case onpmrem CSR1kv router and Cat8kv routers in AWS.
 
 In the left navigation bar, under the Sites bar, click on first site **cAPIC**
 

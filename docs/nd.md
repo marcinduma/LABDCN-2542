@@ -10,7 +10,7 @@ Cisco Nexus Dashboard is a single launch point to monitor and scale across diffe
 
 ### Nexus Dashboard overview
 
-Go to dCloud RDP workstation. Open Chrome web browser and from bookmarks select ***Nexus Dashboard***. Connect with login credentials:
+Go to your RDP session previously opened. Open Chrome web browser and from bookmarks select ***Nexus Dashboard***. Connect with login credentials:
 
 Username:
 	
@@ -20,7 +20,7 @@ User password:
 	
 	C1sco12345
 
-After login to your Nexus Dashboard, you will land in "One view" section. It is usually a world map or table with your sites configured to be maintain from ND.
+After login to your Nexus Dashboard, you will land in "One view" section. It is usually a world map or table with your sites configured to be maintained from ND.
 
 <img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/nd-oneview-1.png" width = 800>
 

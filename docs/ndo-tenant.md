@@ -34,7 +34,7 @@ Associate Tenant to both Sites by checking the checkbox next to it.
 
 For AWS site we have 2 options - **Untrusted** with Cloud Access key and Secret or **Trusted**. In our case we would be using Trusted configuration. 
 
-Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your in POD Details under following Appendix (***OR ON RDP DESKTOP FILE*** to evaluate.)
+Each Tenant created on NDO associated to AWS Cloud required sepearete Account ID on AWS site. You can find your AWS credetials in POD Details at *WILASSISTANT* Dasboard.
 
 Fill in with your POD ** AWS User-Account ID** and select **Access Type** as **Trusted**, hit **Save**. 
 

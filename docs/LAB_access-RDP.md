@@ -24,7 +24,7 @@ When you decide to use BYOD, please connect to VPN using provided credentials in
 
 Once logged to the dCloud session, you will be able to RDP Windows workstation ready to use for you
 
-Open RDP client and use credentials provided below:
+Open RDP client located on Windows Desktop (if you are using BYOD locate it in your OS) and use credentials provided below:
 
 IP Address:
 

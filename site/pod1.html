@@ -9,7 +9,7 @@
 <meta content="Marcin Duma &amp; Karol Okraska" name="author"/>
 <link href="assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.0, mkdocs-material-8.2.16" name="generator"/>
-<title>CiscoLive EMEA 2023 --- LABDCN-2542</title>
+<title>POD1 LABDCN-2542 Lab access details - CiscoLive EMEA 2023 --- LABDCN-2542</title>
 <link href="assets/stylesheets/main.1c3799f8.min.css" rel="stylesheet"/>
 <link href="assets/stylesheets/palette.cc9b2e1e.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -41,7 +41,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#welcome-to-ciscolive-2023-walk-in-lab">
+<a class="md-skip" href="#pod1-labdcn-2542-lab-access-details">
           Skip to content
         </a>
 </div>
@@ -65,7 +65,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Home
+              POD1 LABDCN-2542 Lab access details
             
           </span>
 </div>
@@ -117,38 +117,10 @@
     CiscoLive EMEA 2023 --- LABDCN-2542
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="index.html">
+<li class="md-nav__item">
+<a class="md-nav__link" href="index.html">
         Home
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cisco-aci-support-of-public-cloud-infrastructure">
-    Cisco ACI support of Public Cloud infrastructure
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cisco-cloud-network-solution-components">
-    Cisco Cloud Network Solution components:
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#high-level-design-of-lab-scenario">
-    High Level Design of Lab scenario
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="LAB_access-RDP.html">
@@ -280,19 +252,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cisco-aci-support-of-public-cloud-infrastructure">
-    Cisco ACI support of Public Cloud infrastructure
+<a class="md-nav__link" href="#aws-resources">
+    AWS Resources
+  </a>
+<nav aria-label="AWS Resources" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-infra-resources">
+    AWS Infra resources
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cisco-cloud-network-solution-components">
-    Cisco Cloud Network Solution components:
+<a class="md-nav__link" href="#aws-user-tenant">
+    AWS User Tenant
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#high-level-design-of-lab-scenario">
-    High Level Design of Lab scenario
-  </a>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -301,61 +277,49 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="welcome-to-ciscolive-2023-walk-in-lab">Welcome to CiscoLive 2023 - Walk in Lab</h1>
-<p>Speakers:</p>
-<p><em>Karol Okraska</em>, CX Delivery Architect, Cisco Systems, Inc.</p>
-<p><em>Marcin Duma</em>, CX Delivery Architect, Cisco Systems, Inc.</p>
-<h2 id="cisco-aci-support-of-public-cloud-infrastructure">Cisco ACI support of Public Cloud infrastructure</h2>
-<p>Cisco Cloud Network Controller (formerly Cloud APIC) provides enterprises with networking tools necessary to accelerate their hybrid-cloud and/or multicloud journey.</p>
-<p>Utilizing cloud-native constructs, the solution enables automation that accelerates infrastructure deployment and governance and simplifies management to easily connect workloads across multicloud environments. The Cisco Cloud Network Controller vision is to support enhanced observability, operations, and troubleshooting across the entire environment.</p>
-<p>Cisco Cloud Network Controller enables:</p>
-<p>●      Seamless connectivity for any workload at scale across any location</p>
-<p>●      Operational simplicity and visibility across a vast multisite, multicloud</p>
-<p>●      Data-center network</p>
-<p>●      Easy L4-7 services integration</p>
-<p>●      Consistent security and segmentation</p>
-<p>●      Business continuity and disaster recovery</p>
-<h2 id="cisco-cloud-network-solution-components">Cisco Cloud Network Solution components:</h2>
-<p>Cisco Cloud Network Controller is the main architectural component of this multicloud solution. It is the unified point of automation and management for the solution fabric including network and security policy, health monitoring, and optimizes performance and agility. The complete solution includes:</p>
-<p>●      Cisco Cloud Network Controller ( called CNC later in labguide) (deployed in each Public Cloud which is to be managed) </p>
-<p>●      Cisco Nexus Dashboard (in our lab deployed on-prem) - Multicloud networking orchestration and policy management, disaster recovery, and high availability, as well as provisioning and health monitoring.</p>
-<p>●      Cisco Catalyst® 8000V - deployed in Public Clouds, allowing for communication with other Clouds or on-premises datacenter. Responsible for traffic secuirty and end to end policy enforcement. </p>
-<h2 id="high-level-design-of-lab-scenario">High Level Design of Lab scenario</h2>
-<p>The Lab excercise is about showing you practical use of stretching services between on-prem and Public Cloud leveraging Cisco Nexus Dashboard Orchestrator and CNC for it.
-It gives you oportunity to check how easy can be maintaining your services in different places due to scalibility, costs, performance using Cisco Cloud products.
-Figure below is showing Logical design you are going to deploy in the Lab. Infrastructure part is already deployed, you don't need to bother with NDO installation, CNC installation or day-1 configs. This lab is solely to familiraze you with deployment of logical topology from the figure.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Lab is based on Cisco ACI simulator, thus it won't be possible to run Data-plane between on-prem and AWS. 
-If you are interested to deploy all infra in MultiCloud, please join our <strong>Instructor Led Lab LTRCLD-2557</strong>.</p>
+<h1 id="pod1-labdcn-2542-lab-access-details">POD1 LABDCN-2542 Lab access details</h1>
+<h2 id="aws-resources"><strong>AWS Resources</strong></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to use correct account as indicated in lab guide!</p>
 </div>
-<p><strong>Lab diagram:</strong></p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="80%" href="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png"><img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/image1a.png" width="800"/></a></p>
-<p>As indicated in the diagram, this lab is using EMEA based regions in AWS as well as dCloud (onprem). </p>
-<p>POD runs on dedicated AWS infrastructure tenant which is already deployed and contains CNC and Cat8kv routers. Additionally each POD have dedicated AWS user tenant, its place where Policy model will be deployed.
-Onprem, Lab infrastructure contains Cisco Nexus Dashboard with Nexus Dashboard Orchestrator, Cisco ACI infrastructure and CSR1kv to terminate IPSec tunnels.</p>
-<p>Control plane infrastructure is already deployed for this lab. Use cases will be deployed in user tenant which needs to be onboarded in Cisco Network Controller and Nexus Dashboard Orchestrator.</p>
-<p><strong><p style="text-align: center;">Enjoy!</p></strong></p>
+<h3 id="aws-infra-resources"><strong>AWS Infra resources</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Username</th>
+<th>Password</th>
+<th>Public IPv4 address</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ND1</td>
+<td>admin</td>
+<td>tobeprovided</td>
+<td>tobeprovided</td>
+<td>Nexus Dashboard appliance</td>
+</tr>
+<tr>
+<td>Cisco Cloud Network Controller</td>
+<td>admin</td>
+<td>tobeprovided</td>
+<td>tobeprovided</td>
+<td>CNC-AWS-01 Cloud Network Controller</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aws-user-tenant"><strong>AWS User Tenant</strong></h3>
+<p>AWS User Account ID:<br/> <strong>28374823xxaassxx</strong></p>
+<p>AWS User Account Username:<br/> <strong>student</strong></p>
+<p>AWS User Account Password:<br/> <strong>tobeprovided</strong></p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
-<nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Next: Lab Access" class="md-footer__link md-footer__link--next" href="LAB_access-RDP.html" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              Lab Access
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-</div>
-</a>
-</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">

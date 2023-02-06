@@ -1,6 +1,6 @@
 # Site Connectivity Configuration 
 
-In Next Step will be verification of our Infrastructure connectivity.
+Next Step will be verification of our Infrastructure connectivity - Configuration changes are not necessary.
 
 Navigate to **Infrastructure** -> **Site Connectivity** -> **Configure** button
 

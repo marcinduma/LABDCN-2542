@@ -8,4 +8,4 @@ Cloud Netowrk Controller is using cloud native objects to map ACI constructins i
 
 Below you can find how ACI policy model is mapped to AWS cloud native objects 
 
-<img src="https://raw.githubusercontent.com/marcinduma/LTRCLD-2557/master/images/aws_object_mapping.png" width = 1000>
+<img src="https://raw.githubusercontent.com/marcinduma/LABDCN-2542/master/images/aws_object_mapping.png" width = 1000>
